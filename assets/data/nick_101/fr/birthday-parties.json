@@ -1,0 +1,1047 @@
+{
+    "pretty-princess": {
+        "name": "Jolies princesses",
+        "price": 250,
+        "priceCondition": "(pour un max de huit enfants)",
+        "option": "pour chaque invité supplémentaire.",
+        "optionPrice": 25,
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "16-20",
+                        "23-27",
+                        "30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 5,
+                    "to": 5,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T17:00:00Z",
+                            "end": "0001-01-01T19:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "from": 6,
+                    "to": 0,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T10:00:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T13:00:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T16:00:00Z",
+                            "end": "0001-01-01T18:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "super-stars": {
+        "name": "Les super vedettes",
+        "price": 260,
+        "priceCondition": "(pour un max de huit enfants)",
+        "option": "pour chaque invité supplémentaire.",
+        "optionPrice": 28,
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "16-20",
+                        "23-27",
+                        "30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 5,
+                    "to": 5,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T17:00:00Z",
+                            "end": "0001-01-01T19:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "from": 6,
+                    "to": 0,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T10:00:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T13:00:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T16:00:00Z",
+                            "end": "0001-01-01T18:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "glow-spa": {
+        "name": "Spa-gâter",
+        "price": 280,
+        "priceCondition": "(pour un max de huit enfants)",
+        "option": "pour chaque invité supplémentaire.",
+        "optionPrice": 30,
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "16-20",
+                        "23-27",
+                        "30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 5,
+                    "to": 5,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T17:00:00Z",
+                            "end": "0001-01-01T19:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "from": 6,
+                    "to": 0,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T10:00:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T13:00:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T16:00:00Z",
+                            "end": "0001-01-01T18:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "sweet-16": {
+        "name": "Sweetest spa",
+        "price": 330,
+        "priceCondition": "(pour un max de huit enfants)",
+        "option": "pour chaque invité supplémentaire.",
+        "optionPrice": 35,
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "16-20",
+                        "23-27",
+                        "30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 5,
+                    "to": 5,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T17:00:00Z",
+                            "end": "0001-01-01T19:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "from": 6,
+                    "to": 0,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T10:00:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T13:00:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T16:00:00Z",
+                            "end": "0001-01-01T18:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "spajama": {
+        "name": "Spajama",
+        "price": 300,
+        "priceCondition": "(pour un max de huit enfants)",
+        "option": "pour chaque invité supplémentaire.",
+        "optionPrice": 32,
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "15-19",
+                        "21-26",
+                        "28-30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 0,
+                    "to": 7,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T18:00:00Z",
+                            "end": "0001-01-01T20:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "for-boys": {
+        "name": "Mon bel homme",
+        "price": 260,
+        "priceCondition": "(pour un max de huit enfants)",
+        "option": "pour chaque invité supplémentaire.",
+        "optionPrice": 28,
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "16-20",
+                        "23-27",
+                        "30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 5,
+                    "to": 5,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T17:00:00Z",
+                            "end": "0001-01-01T19:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "from": 6,
+                    "to": 0,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T10:00:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T13:00:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T16:00:00Z",
+                            "end": "0001-01-01T18:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "customized": {
+        "name": "Personnalisé",
+        "options": [
+            "Manucure",
+            "Pédicure",
+            "Maquillage scintillant",
+            "Masque faciale au yogourt",
+            "Facial au chocolat",
+            "Couleurs temporaires de cheveux",
+            "S'habiller en princesse",
+            "Robes de spa",
+            "Accessoires pour prise de photos"
+        ],
+        "calendar": {
+            "days": [
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "ignore": [
+                        "15-19",
+                        "21-26",
+                        "28-30"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "and": 0
+                }
+            ],
+            "time": [
+                {
+                    "from": 5,
+                    "to": 5,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T17:00:00Z",
+                            "end": "0001-01-01T19:00:00Z"
+                        }
+                    ]
+                },
+                {
+                    "from": 6,
+                    "to": 0,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T10:00:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T13:00:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T16:00:00Z",
+                            "end": "0001-01-01T18:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "with-mama": {
+        "name": "Avec-Mama",
+        "price": 80,
+        "priceCondition": "Un forfait de spa pour une durée de 60 min",
+        "calendar": {
+            "days": [
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                }
+            ],
+            "time": []
+        }
+    },
+    "with-daddy": {
+        "name": "Avec-Daddy",
+        "price": 70,
+        "priceCondition": "Un forfait de spa pour une durée de 60 min",
+        "calendar": {
+            "days": [
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "from": 0,
+                    "to": 6
+                }
+            ],
+            "time": []
+        }
+    },
+    "march-break": {
+        "name": "Camp de relâche scolaire",
+        "price": 49,
+        "priceCondition": "",
+        "calendar": {
+            "days": [
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-15",
+                        "21-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                }
+            ],
+            "time": []
+        }
+    },
+    "march-break-workshop": {
+        "name": "Atelier de la semaine de relâche",
+        "price": 49,
+        "priceCondition": "",
+        "calendar": {
+            "days": [
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-13",
+                        "19-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                },
+                {
+                    "ignore": [
+                        "0-31"
+                    ],
+                    "from": 0,
+                    "to": 6
+                }
+            ],
+            "time": [
+                {
+                    "from": 0,
+                    "to": 7,
+                    "slots": [
+                        {
+                            "start": "0001-01-01T09:30:00Z",
+                            "end": "0001-01-01T12:00:00Z"
+                        },
+                        {
+                            "start": "0001-01-01T12:30:00Z",
+                            "end": "0001-01-01T15:00:00Z"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

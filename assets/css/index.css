@@ -1,0 +1,190 @@
+/* Template Dependency - Required */
+.container {
+  box-sizing: border-box;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+/* Onic - Required */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font: 400 100% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
+}
+
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+.hide {
+  color: transparent;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  width: 0;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+}
+
+.welcome:before {
+  content: "Welcome to";
+  margin-right: 0.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.clear {
+  background: none;
+  clear: both;
+  display: block;
+  float: none;
+  height: 0px;
+  width: 100%;
+}
+
+.cards .card {
+  box-shadow: 0px 0px 5px rgba(204, 204, 204, 0.3);
+  box-sizing: border-box;
+  border-radius: 2px;
+  float: left;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (min-width: 765px) {
+  .cards .card {
+    margin-right: 2.5%;
+    width: 48.75%;
+  }
+
+  .cards .card:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 1023px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .cards .card {
+    /* margin-right: 2.5%; */
+    width: 31.5%;
+  }
+
+  .cards .card:first-child {
+    margin-left: 15.75%;
+  }
+}
+
+.card .img {
+  height: 0;
+  overflow: hidden;
+  padding-top: 35%;
+  position: relative;
+  width: 100%;
+}
+.card img {
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 80%;
+}
+
+.card .content {
+  padding: 0 1.25rem 1.25rem 1.25rem;
+}
+
+.card p {
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+
+a.boxed-btn,
+.boxed-btn {
+  background: #a72519;
+  border-radius: 23px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  overflow: hidden;
+  padding: 11px 34px;
+  position: relative;
+  text-transform: capitalize;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: auto;
+}
+
+.boxed-btn.nick-101 {
+  background: #701e47;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2375px;
+  }
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mr-4 {
+  margin-right: 16px;
+}

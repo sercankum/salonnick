@@ -1,0 +1,303 @@
+/* Template Dependency - Required */
+@import url('bootstrap.min.css');
+.container {
+    position: relative;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Template Dependency - Not Required */
+.boxed-btn {
+    background:#701e47;
+    border-radius: 23px;
+    color: #fff;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    overflow: hidden;
+    padding: 11px 34px;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    text-transform: capitalize;
+}
+
+.salon-nick .boxed-btn {
+    background:#a72519;
+}
+
+.info-box {
+    padding: 30px 40px;
+    box-shadow: 0px 1px 4px 0px rgba(44, 49, 59, 0.15);
+    margin-bottom: 20px;
+    -webkit-transition: .3s all;
+    transition: .3s all;
+}
+
+.info-box:hover {
+    box-shadow: 0px 4px 30px 0px rgba(44, 49, 59, 0.15);
+}
+
+/* Onic - Required */
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+p a,
+p a:active,
+p a:focus,
+p a:hover,
+p a:visited {
+    border-bottom: 1px solid #701e47;
+    padding-bottom: 0.15rem;
+}
+
+p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+img.icon {
+    display: block;
+    clear: both;
+    float: left;
+    height: 35px;
+    transition: all 0.2s ease-in;
+    margin-right: 7px;
+    width: 15px;
+}
+
+img.icon.big {
+    height: 35px;
+    padding: 3px 3px 3px 0;
+    width: 35px;
+}
+
+img.icon.hide {
+    opacity: 0;
+}
+
+.clear {
+    background: none;
+    clear: both;
+    display: block;
+    float: none;
+    height: 0px;
+    width: 100%;
+}
+
+/* Aside */
+.aside-load.close {
+    opacity: 0; 
+    transform: translate(-50%, -50%) scale(0.9); 
+    z-index: 0;
+}
+
+/* Contact Dependencies - Not Required */
+/* Aside Overlay */
+.aside-modal-overlay {
+    background: white;
+    background: rgba(0,0,0,0.4);
+    content: '';
+    height: 10000px;
+    left: -500px;
+    position: fixed;
+    top: -1000px;
+    visibility: hidden;
+    width: 10000px;
+    z-index: 10;
+}
+
+.aside-modal-overlay.on-modal,
+.aside-modal-overlay.on-nav {
+    visibility: visible;
+}
+
+.aside-modal-overlay.on-nav {
+    z-index: 4;
+}
+
+/* Banner */
+.banner .img {
+    overflow: hidden;
+    padding-top: 60%;
+    position: relative;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .banner .img {
+        padding-top: 45%;
+    }
+}
+@media (min-width:992px){
+    .banner .img {
+        padding-top: 35%;
+    }
+}
+  
+.banner .img img {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subscribe {
+    background: #701e47;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+}
+.salon-nick .subscribe {
+    background: #a72519;
+}
+
+/* Footer */
+.foot {
+      padding: 80px 0;
+      color: #000000;
+      letter-spacing: 0.25px;
+}
+  
+.foot h4 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.foot li {
+    line-height: 2;
+}
+.foot .locations img {
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.foot .locations a {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-top: 30%;
+    width: 100%;
+}
+  
+@media (min-width:992px)  {
+    .foot .locations a {
+        padding-top: 16%;
+        width: 46%;
+        margin: 1%;
+    }
+}
+
+.foot .locations a:last-child {
+    border-left: none;
+}
+  
+.foot .locations a span {
+    color: transparent;
+    float: left;
+    height: 0;
+}
+  
+.foot .locations a:hover {
+    cursor: pointer;
+}
+
+.foot-copyright {
+    padding: 40px 0;
+}
+
+.foot-copyright li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Services Dependencies - Not Required */
+form .config.hide {
+    color: transparent;
+    height: 0;
+    overflow: hidden;
+}
+
+form label {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form label span {
+    display: block;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0.25rem;
+    margin-bottom: 0.25rem;
+    width: 100%;
+}
+
+/* form label span.error, */
+form label span.error-empty,
+form label span.error-invalid {
+    border-radius: 0 0 2px 2px;
+    border-top: 0;
+    box-sizing: border-box;
+    color: #701E47;
+    height: 0px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 0.25rem;
+    transition: all 0.2s ease-in-out;
+    margin: 0;
+}
+
+.salon-nick form label span.error-empty,
+.salon-nick form label span.error-invalid {
+    color: #a72519;
+}
+
+/* form input.error + span.error, */
+form input.error-empty + span.error-empty,
+form input.error-invalid + span + span.error-invalid,
+form textarea.error-empty + span.error-empty {
+    height: 38px;
+    border: 1px solid #701E47;
+}
+
+.salon-nick form input.error-empty + span.error-empty,
+.salon-nick form input.error-invalid + span + span.error-invalid,
+.salon-nick .form textarea.error-empty + span.error-empty {
+    border: 1px solid #a72519;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+form textarea {
+    overflow: auto;
+    resize: vertical;
+}

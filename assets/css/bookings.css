@@ -1,0 +1,409 @@
+/* Onic | Form Dependency - Required */
+.none {
+    display: none;
+}
+
+form .config.hide {
+    color: transparent;
+    height: 0;
+    margin: 0 !important;
+    overflow: hidden;
+}
+
+form label {
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+form label span {
+    display: block;
+    color: #000000;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0.25rem;
+    margin-bottom: 0.25rem;
+    width: 100%;
+}
+
+/* form label span.error, */
+form label span.error-empty,
+form label span.error-invalid {
+    border-radius: 0 0 2px 2px;
+    border-top: 0;
+    box-sizing: border-box;
+    color: #701E47;
+    height: 0px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 0.25rem;
+    transition: all 0.2s ease-in-out;
+    margin: 0;
+}
+
+.salon-nick form label span.error-empty,
+.salon-nick form label span.error-invalid {
+    color: #a72519;
+}
+
+/* form input.error + span.error, */
+form input.error-empty + span.error-empty,
+form input.error-invalid + span + span.error-invalid,
+form textarea.error-empty + span.error-empty {
+    height: 38px;
+    border: 1px solid #701E47;
+}
+
+.salon-nick form input.error-empty + span.error-empty,
+.salon-nick form input.error-invalid + span + span.error-invalid,
+.salon-nick .form textarea.error-empty + span.error-empty {
+    border: 1px solid #a72519;
+}
+
+form input,
+form textarea {
+    border: none;
+    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+form textarea {
+    overflow: auto;
+    resize: vertical;
+}
+
+form [readonly='readonly'] {
+    pointer-events: none;
+ }
+
+/* 
+
+Form 
+- Labels
+- Inputs
+
+*/
+.booking label {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.booking label span {
+    display: block;
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    padding: 0.25rem;
+    margin-bottom: 0.25rem;
+    width: 100%;
+}
+
+.booking input {
+    border: none;
+    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 30px;
+    padding: 0.25rem;
+    width: 100%;
+}
+
+.booking label span.error {
+        /* background: #701E47; */
+    /* border: 1px solid #701E47; */
+    border-radius: 0 0 2px 2px;
+    border-top: 0;
+    box-sizing: border-box;
+    /* color: #ffffff; */
+    color: #701E47;
+    height: 0px;
+    line-height: 38px;
+    overflow: hidden;
+    padding: 0 0.25rem;
+    transition: all 0.2s ease-in-out;
+    margin: 0;
+}
+
+.booking input.error + span.error {
+    height: 38px;
+    border: 1px solid #701E47;
+}
+
+/* 
+
+Radio Group
+- Select Gender
+- Calendar Days
+
+*/
+.booking .checkboxGroup label,
+.booking .radioGroup label {
+    float: left;
+    margin-bottom: 0;
+    width: 50%;
+}
+
+.booking .checkboxGroup label {
+    width: 100%;
+}
+
+.booking .checkboxGroup input,
+.booking .radioGroup input {
+    padding: 0;
+}
+
+.booking .checkboxGroup label span,
+.booking .radioGroup label span {
+    line-height: 44px;
+}
+
+.booking .checkboxGroup .checkbox,
+.booking .radioGroup .radio {
+    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 2px;
+    float: left;
+    height: 24px;
+    transition: all 0.25s ease-in-out;
+    margin: 10px 10px 0 0;
+    width: 24px;
+}
+
+.booking input[type=checkbox],
+.booking input[type=radio] {
+    float: left;
+    height: 0;
+    opacity: 0;
+}
+
+.booking input[type="checkbox"]:checked+.checkbox,
+.booking input[type="radio"]:checked+.radio {
+    background: #701E47
+}
+
+.booking .radioGroup .days label {
+    height: 35px;
+    position: relative;
+    text-align: center;
+    width: 14%;
+}
+
+.booking .radioGroup .days label span {
+    color: #bababa;
+    border: none;
+    left: 0;
+    line-height: 35px;
+    height: 35px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.booking .radioGroup .days label.allowBooking span {
+    /* color: #5e6271; */
+    color: #701e47;
+    font-weight: 400;
+}
+
+.booking .radioGroup .days input[type="radio"]:checked+span+span {
+    color: #ffffff;
+}
+
+
+/* 
+
+Radio Group
+- Select Time 
+
+*/
+
+.booking .times.radioGroup label {
+    position: relative;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.booking .times.radioGroup .radio {
+    background: white;
+    border-radius: 23px; 
+    color: #5e6271 !important;
+    font-size: 1rem;
+    height: 100%;
+    left: 0;
+    letter-spacing: 1px;
+    border: 1px solid #b0b1ba;
+    position: absolute;
+    top: 0;
+    transition: all 0.3s ease-in;
+    margin: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.booking .times.radioGroup .radio+span {
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}x
+
+.booking .times.radioGroup label:hover+.radio{
+    color: #701E47 !important;
+    border: 1px solid#701E47;
+}
+
+.booking .times.radioGroup input[type="radio"]:checked+span+span {
+    color: #ffffff !important;
+}
+
+/* 
+
+Calendar
+- Base Setup
+- Title
+- Weekdays Banner 
+
+*/
+
+.booking .calendar {
+    border-radius: 5px; 
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.booking .calendar .currentMonth li {
+    display: block;
+    font-size: 1.2rem;
+    padding: 10px 0;
+    text-align: center;
+    background: #ffffff;
+    color: #2c3145;
+    position: relative;
+    overflow: hidden;
+}
+
+.booking .calendar .currentMonth li .icon {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 44px;
+    height: 44px;
+}
+
+.booking .calendar .currentMonth li .icon.leftArrow {
+    left: 0;
+}
+
+.booking .calendar .currentMonth li .icon.rightArrow {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.booking .weekdays {
+    background: #701E47;
+    color: #fff;
+    padding: 10px 0 10px;
+    margin: 0 0 10px 0;
+}
+
+.booking .weekdays li {
+    float: left;
+    text-align: center;
+    width: 14%;
+}
+
+.booking .calendar .weekdays li.clear {
+    background: none;
+    clear: both;
+    display: block;
+    float: none;
+    height: 1px;
+    width: 100%;
+}
+
+.booking .ic .boxed-btn:hover {
+    background: #701E47;
+    box-shadow: none;
+    color: #ffffff !important;
+}
+
+.booking .ic .boxed-btn:before, 
+.booking .ic .boxed-btn:after {
+    content: none;
+}
+
+.booking .time {
+    position: relative;
+}
+
+.booking .time .times {
+    background: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.booking .time .gettingTimes {
+    background: #ffffff;
+    border-radius: 2px;
+    height: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    transition: all 350ms ease-in;
+    width: 100%;
+    z-index: 2;
+}
+
+.booking .time .gettingTimes.hide {
+    z-index: 0;
+    opacity: 0;
+}
+
+.booking .gettingTimes p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 2rem;
+    width: 100%;
+}
+
+.booking.fr .gettingTimes p {
+    font-size: 1.25rem;
+}
+
+/* Slider */
+.slider {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+.slides {
+    left: 0;
+    padding: 0;
+    position: relative;
+    top: 0;
+    transition: all 0.4s ease-in-out;
+    margin: 0;
+    width: 600%;
+}
+
+.slide {
+    display: block;
+    float: left;
+    padding: 0;
+    position: relative;
+    margin: 0;
+    width: 16.6%;
+    margin-right: 0.1%;
+}
+
+.slide:nth-child(5),
+.slide:last-child {
+    margin-right: 0;
+}

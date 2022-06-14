@@ -1,0 +1,53 @@
+{
+    "shimmer-spray": {
+        "name": "Spray Scintillant Coloré Temporaire - Instatint",
+        "img": "shimmer-spray.jpg",
+        "content": [
+            "Les couleurs des cheveux sont une tendance à la hausse chez les enfants et les adolescents.. Maintenant, amusez-vous! Pas de ficelles ou de dommages attachés!",
+            "Nous sommes heureux de vous présenter au spray scintillant coloré temporaire Instatint! Instatint est le choix parfait pour n'importe quelle couleur, texture, ou longueur de cheveux. C'est la couleur temporaire qui se lave facilement avec le shampooing, les pigments temporaires ne signifient aucun engagement à long terme ou dommages de traitement."
+        ]
+    },
+    "ice-spiker": {
+        "name": "Ice Spiker Colorz",
+        "img": "ice-spiker.jpg",
+        "content": [
+            "La colle coiffante Joico ICE Spiker ColorZ est une colle de style temporaire avec de la couleur. Il donne la possibilité de créer n'importe quelle forme, y compris les pointes droites. L'intensité de la couleur peut varier selon le type de cheveux, la condition et la porosité.",
+            "Il est résistant à l'eau, mais se lave facilement avec du shampooing. Il protège et maintient également des modèles avec des vitamines, des catalyseurs, et le varech de mer. Vous tomberez en amour avec le parfum délicieux de lait et de miel!"
+        ]
+    },
+    "beyond-the-zone-bombz": {
+        "name": "Beyond The Zone Color Bombz",
+        "img": "color-combz.jpg",
+        "content": [
+            "Chez Salon Nick, les choix de style sont infinis! Beyond The Zone Color Bombz ajoute une couleur temporaire où vous voulez! Il s'agit d'une coloration temporaire spécialement formulée dans de multiples nuances qui n'endommage pas vos cheveux.",
+            "Pas besoin d'utiliser des teintes, des agents de blanchiment ou du peroxyde. Au-delà de la zone Color Bombz se lave facilement avec votre prochain shampooing."
+        ]
+    },
+    "joico": {
+        "name": "Joico Collection",
+        "img": "joico.jpg",
+        "content": [
+            "Pourquoi Joico? Joico est une gamme de produits professionnels pour la reconstruction et le renforcement des cheveux.",
+            "Il a un nom pour une énergie remarquable. Au Salon Nick Hair Design, nous utilisons les produits Joico suivants qui conviennent aux soins capillaires faibles et épuisants:",
+            "{{ joico-list }}"
+        ],
+        "joico-list": [
+            "K-PAK’s multi-action formulas",
+            "K-PAK Color Therapy",
+            "Daily Care formulas",
+            "Smooth Cure’s",
+            "Body Luxe",
+            "Color Endure",
+            "Moisture Recovery",
+            "Style & Finish formulas"
+        ]
+    },
+    "wella": {
+        "name": "Wella - Color Perfect",
+        "img": "wella.jpg",
+        "content": [
+            "Il n'y a rien dans le monde comme la beauté des cheveux brillant! Avec la couleur permanente de cheveux Color Perfect par Wella, la couleur sur la nuance sera la couleur sur les cheveux.",
+            "Il a une excellente gamme de couleurs crème gel formulées pour être complètement inter- miscibles afin de créer n'importe quelle nuance désirée avec des résultats prévisibles naturelles prospectifs. Couleur abordable avec des résultats brillants. Brillance élevée, protection contre l'humidité et couverture complète."
+        ]
+    }
+}

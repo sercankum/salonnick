@@ -1,0 +1,374 @@
+/* Template Dependency - Required */
+@import url("bootstrap.min.css");
+.container {
+  position: relative;
+}
+
+.section-padding {
+  padding: 80px 0;
+}
+.section-padding.s-22 {
+  padding: 22px 0 88px;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.hideTxt {
+  display: block;
+  height: 0;
+  opacity: 0;
+  width: 0;
+}
+.on_dN {
+  display: none;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+/* Template Dependency - Not Required */
+/* Onic - Required */
+article,
+aside,
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+  color: #000000;
+  text-decoration: none;
+  outline: none;
+}
+
+p a,
+p a:active,
+p a:focus,
+p a:hover,
+p a:visited {
+  border-bottom: 1px solid #701e47;
+  padding-bottom: 0.15rem;
+}
+
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+img.icon {
+  display: block;
+  clear: both;
+  float: left;
+  height: 35px;
+  transition: all 0.2s ease-in;
+  margin-right: 7px;
+  width: 15px;
+}
+
+img.icon.hide {
+  opacity: 0;
+}
+
+button:active {
+  outline: none;
+  border: none;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.clear {
+  background: none;
+  clear: both;
+  display: block;
+  float: none;
+  height: 0px;
+  width: 100%;
+}
+
+/* Banner */
+.banner .img {
+  overflow: hidden;
+  padding-top: 27%;
+  position: relative;
+  width: 100%;
+}
+
+.banner .img img {
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.subscribe {
+  background: #701e47;
+  color: #fff;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.salon-nick .subscribe {
+  background: #a72519;
+}
+
+/* Footer */
+.foot {
+  padding: 80px 0;
+  color: #000000;
+  letter-spacing: 0.25px;
+}
+
+.foot h4 {
+  margin-bottom: 2rem;
+  position: relative;
+}
+.foot li {
+  line-height: 2;
+}
+.foot .locations img {
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.foot .locations a {
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 30%;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .foot .locations a {
+    padding-top: 16%;
+    width: 46%;
+    margin: 1%;
+  }
+}
+
+.foot .locations a:last-child {
+  border-left: none;
+}
+
+.foot .locations a span {
+  color: transparent;
+  float: left;
+  height: 0;
+}
+
+.foot .locations a:hover {
+  cursor: pointer;
+}
+
+.foot-copyright {
+  padding: 40px 0;
+}
+
+.foot-copyright li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Product Dependencies - Not Required */
+.pyjamas {
+  color: #701e47;
+  font-size: 1.5rem;
+  font-family: cursive;
+}
+
+/* Modal */
+.aside-modal {
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  border-radius: 2px;
+  height: 100%;
+  left: 50%;
+  opacity: 1;
+  overflow-y: scroll;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 720px;
+  z-index: 11;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.aside-modal.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.aside-modal.booking {
+  max-width: 385px;
+}
+
+.aside-modal.message {
+  z-index: 13;
+}
+
+@media (min-width: 425px) {
+  .aside-modal {
+    max-height: 95%;
+  }
+}
+
+.aside-modal-overlay {
+  background: white;
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  height: 10000px;
+  left: -500px;
+  opacity: 1;
+  position: fixed;
+  top: -1000px;
+  width: 10000px;
+  z-index: 10;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+.aside-modal-overlay.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.aside-modal-overlay.message {
+  background: transparent;
+  z-index: 12;
+}
+
+.aside-modal-overlay.on-nav {
+  visibility: visible;
+}
+
+.aside-modal-overlay.on-nav {
+  z-index: 4;
+}
+
+.aside-modal .aside-inner {
+  background: #fff;
+  padding: 1.25rem;
+  position: relative;
+  z-index: 11;
+}
+
+.aside-modal.message .aside-inner {
+  height: 100%;
+}
+
+.aside-modal .close {
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 2px;
+  float: right;
+  font-weight: 300;
+  line-height: 24px;
+  height: 44px;
+  -webkit-appearance: none;
+  width: 44px;
+  padding: 0;
+}
+
+.aside-modal .header,
+.aside-modal .content {
+  width: 100%;
+}
+
+.aside-modal .message {
+  font-size: 2rem;
+  font-weight: 300;
+  left: 0;
+  padding: 1.25rem;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Buttons */
+.boxed-btn {
+  background: #701e47;
+  border-radius: 23px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+  overflow: hidden;
+  padding: 11px 34px;
+  position: relative;
+  text-transform: capitalize;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  width: auto;
+}
+
+.boxed-btn:hover {
+  cursor: pointer;
+}
+
+.salon-nick .boxed-btn {
+  background: #a72519;
+}
+
+/* Packages */
+.section-title {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.section-title h2 {
+  font-weight: 400;
+}
+.section-title h3 {
+  font-weight: 300;
+}
+
+.service-box h4 {
+  color: #2c3145;
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.2rem;
+  text-transform: capitalize;
+  margin-bottom: 0.95rem;
+}
+
+.fr .service-box h4 {
+  text-transform: none;
+}
+
+.grey-border-bottom {
+  border-bottom: 1px solid #eee;
+}
+
+.purple-border-bottom {
+  border-bottom: 1px solid #701e47;
+}

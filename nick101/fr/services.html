@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="fr" id="on-app" class="salon-nick101">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../../favicon-101.png"
+      type="image/x-icon"
+    />
+    <title>Salon Nick 101 | Services Capillaires</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+      }
+
+      .aside-load {
+        background: #fff;
+        left: 50%;
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 750ms ease-in;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .aside-load:after {
+        background: white;
+        content: "";
+        height: 10000px;
+        left: -500px;
+        position: absolute;
+        top: -500px;
+        width: 10000px;
+        z-index: 0;
+      }
+
+      .aside-load .body {
+        padding: 0 15px;
+        position: relative;
+        z-index: 11;
+      }
+
+      .aside-load .svg-box {
+        margin: 0 auto 15px;
+        width: 62.5px;
+      }
+
+      .aside-load svg {
+        animation: rotate 1.4s linear infinite;
+        -webkit-animation: rotate 1.4s linear infinite;
+        -moz-animation: rotate 1.4s linear infinite;
+        position: relative;
+      }
+
+      .aside-load-msg {
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .aside-load-msg .title {
+        display: block;
+        margin-bottom: 0.83rem;
+        width: 100%;
+      }
+
+      .aside-load .close-btn {
+        color: #ffffff;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+      }
+
+      .aside-load .close-btn span {
+        background: #701e47;
+        border-radius: 23px;
+        display: block;
+        line-height: 24px;
+        padding: 10px 35px;
+      }
+
+      .aside-load.hide,
+      .aside-load .close-btn.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes rotate {
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @-moz-keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../assets/css/onic.nav.css" />
+    <link rel="stylesheet" href="../../assets/css/services.css" />
+  </head>
+
+  <body>
+    <!-- Start: Loading Modal ============================= -->
+    <aside id="aside-load" class="aside-load">
+      <div class="body">
+        <div class="svg-box">
+          <svg
+            width="70px"
+            height="70px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              fill="transparent"
+              stroke-width="2"
+              cx="33"
+              cy="33"
+              r="30"
+              stroke="url(#gradient)"
+              style="stroke-dasharray: 170; stroke-dashoffset: 20"
+            ></circle>
+            <linearGradient id="gradient">
+              <stop offset="50%" stop-color="#701e47" stop-opacity="1"></stop>
+              <stop offset="65%" stop-color="#701e47" stop-opacity=".5"></stop>
+              <stop offset="100%" stop-color="#701e47" stop-opacity="0"></stop>
+            </linearGradient>
+          </svg>
+        </div>
+        <h2 class="aside-load-msg">
+          <span class="title">Salon Nick 101</span>
+          <span id="aside-load-dynamic">Chargement, veuillez patienter</span>
+        </h2>
+      </div>
+    </aside>
+
+    <!-- Start: Modal
+    ============================= -->
+    <aside id="aside-modal" class="aside-modal">
+      <div class="aside-inner"></div>
+    </aside>
+
+    <div id="aside-modal-overlay" class="aside-modal-overlay"></div>
+
+    <!-- Start: Custom Info Banner ============================= -->
+    <aside id="tag-aside-info-bar" class="info-bar">
+      <div id="info-bar-msg" class="info-bar-msg">
+        <p class="container">
+          COVID-19: Politiques et procédures
+          <span id="info-bar-arrow" class="arrow">⯆</span>
+        </p>
+      </div>
+      <div id="info-bar-body" class="info-bar-body">
+        <div class="info-bar-body-bar">
+          <div class="container d-table">
+            <p class="title col-9 float-left">
+              Nous suivons des directives strictes pour assurer la sécurité de
+              nos clients et de notre personnel en raison du COVID-19.
+            </p>
+            <div class="col-3 float-left pr-0">
+              <button id="close-info-bar">
+                <span><i></i><i></i>Fermer la barre d'informations</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="container mb-3">
+          <li>
+            À votre arrivée, veuillez rester dans votre voiture et appelez-nous
+            au <a class="tel" href="tel:+16134219101">613-421-9101</a> pour vous
+            informer de votre date d'arrivée.
+          </li>
+          <li>
+            Lorsque vous entrez dans le salon, veuillez porter un masque facial.
+            Nous vous recommandons un jetable si vous bénéficiez d'un service de
+            couleur.
+            <span class="extra-info"
+              >Aura des masques jetables disponibles sur demande.</span
+            >
+          </li>
+          <li>
+            Veuillez vous laver / désinfecter vos mains immédiatement en entrant
+            dans le salon.
+          </li>
+          <li>
+            Veuillez conserver tous les éléments inutiles dans votre véhicule.
+            N'apportez que l'essentiel - clés, téléphone et mode de paiement.
+          </li>
+          <li>
+            Nous arrêterons tous les services de boissons dans le salon ainsi
+            que tous les magazines.
+          </li>
+          <li>
+            Gardez votre famille et vos amis en sécurité à la maison. Un seul
+            client est autorisé par station.
+          </li>
+        </ul>
+
+        <p class="container mb-3">
+          Merci à tous pour votre patience et votre compréhension. Au plaisir de
+          vous servir tout.
+        </p>
+      </div>
+    </aside>
+    <!-- End: Custom Info Banner ============================= -->
+
+    <!-- Start: Header Top
+    ============================= -->
+    <section id="tag-sec-navTop" class="nav-top">
+      <div class="container">
+        <div class="row pt-2 pb-3">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <a href="../../nick101/services.html" class="lang slash">En</a>
+            <a href="#" class="lang active">Fr</a>
+            <a
+              href="https://www.facebook.com/salonnick101/"
+              target="_blank"
+              rel="noopener"
+              class="social"
+            >
+              <img
+                src=""
+                data-src="svg/fb-w.svg"
+                alt="Facebook link image."
+                class="lazyImg icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/salonnick101/"
+              target="_blank"
+              rel="noopener"
+              class="social"
+            >
+              <img
+                src=""
+                data-src="svg/inst-w.svg"
+                alt="Instagram link image."
+                class="lazyImg icon"
+              />
+            </a>
+            <img
+              id="imgClock"
+              src=""
+              data-src="svg/clock-p.svg"
+              alt="Purple clock icon."
+              class="lazyImg icon hide"
+            />
+            <p id="ifOpen"></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-2 pl-md-0 pl-lg-0 info">
+            <a href="#">
+              <img
+                src=""
+                data-src="svg/mail-p.svg"
+                alt="Purple mail icon."
+                class="lazyImg icon"
+              />
+              salonnick101@hotmail.com</a
+            >
+
+            <a href="tel:+16134219101">
+              <img
+                src=""
+                data-src="svg/phone-p.svg"
+                alt="Purple phone icon."
+                class="lazyImg icon h44"
+              />
+              +1 613-421-9101</a
+            >
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="tag-nav-seprator"></div>
+    <!-- Start: Navigation
+    ============================= -->
+    <section id="tag-sec-nav" class="navbar-wrapper">
+      <div id="tag-div-nav" class="navbar-area sticky-nav container">
+        <div class="logo">
+          <a href="../../nick101/fr/accueil.html">
+            <img
+              src="../../assets/img/svg/nick101.svg"
+              alt="Logo du Salon Nick 101."
+            />
+          </a>
+        </div>
+        <button id="btn-nav">
+          <span><i></i><i></i>Bouton de navigation</span>
+        </button>
+        <nav id="tag-nav">
+          <ul>
+            <li><a href="../../nick101/fr/accueil.html">Accueil</a></li>
+            <li class="active"><a href="#">Services</a></li>
+            <li>
+              <a href="../../nick101/fr/fetes.html">Fêtes et événements</a>
+            </li>
+            <li><a href="../../nick101/fr/produits.html">Produits</a></li>
+            <li><a href="../../nick101/fr/galerie.html">Galerie</a></li>
+            <li><a href="../../nick101/fr/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+        <div class="bkr"></div>
+      </div>
+    </section>
+
+    <header class="banner">
+      <div class="img mb-4">
+        <img src="" data-src="service/banner.jpg" alt="" class="lazyImg" />
+        <!-- <img src="../../assets/img/service/services_banner.jpg" alt=""> -->
+      </div>
+      <div class="container">
+        <h1 class="mb-3">Salon Nick 101 - Services</h1>
+        <p>
+          Vous cherchez un service de coiffure de qualité et personnalisé? Vous
+          êtes au bon endroit! Au salon de coiffure Salon Nick, on vous donnera
+          l&#39;attention et le service professionnel que vous méritez. Nous
+          offrons une sélection complète de services de style de coiffure pour
+          vous faire paraître et se sentir unique.
+        </p>
+      </div>
+    </header>
+
+    <!-- Start: Our Service
+    ============================= -->
+    <section id="services" class="section-padding s-22">
+      <!-- Women's -->
+      <div class="container">
+        <h2 id="femmes" class="mb-3">Femmes</h2>
+        <div class="cards no-padding mb-4">
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-haircut.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_haircut.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Coupe de cheveux</h2>
+              <p>
+                Obtenez le style comme vous le voulez! Notre personnel compétent
+                qui sait quel look fonctionne pour chacun de nos clients est
+                prêt à vous servir avec des années d&#39;expérience. Notre
+                équipe réalise toutes les coupes, de la plus classique à la plus
+                originale, afin de créer un style qui correspond à votre
+                individualité.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-blowdry.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_blowdry.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Brushing</h2>
+              <p>
+                Vous cherchez à transformer vos cheveux afin de devenir plus
+                intéressant, nos coiffeurs sont heureux d&#39;aider vos cheveux
+                ayant un volume avec le genre de douces courbes brillantes qui
+                vous font ressembler à des célébrités!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-updo.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_updo.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Coiffures haute</h2>
+              <p>
+                Les coiffures hautes sont parfaites pour des occasions spéciales
+                comme un bal, des mariages et des fêtes. Également les chignons
+                sont une solution de coiffure fabuleuse pour les cheveux longs,
+                moyens et même courts. Il est parfait pour les femmes qui
+                veulent mettre leur personnalité en valeur!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-treatment.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_treatment.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Traitement capillaire</h2>
+              <p>
+                Chez Salon Nick 101, nous offrons le meilleur des soins
+                capillaires. Nous utilisons la collection Joico qui est adaptée
+                pour le soin des cheveux faibles et épuisants afin de protéger
+                les cheveux et les rendre plus fort.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-colour.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_colour.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Coloration</h2>
+              <p>
+                Nous sommes fiers à Salon Nick 101 que nos coiffeurs ont de
+                l&#39;expérience avec diverses techniques telles que les mèches
+                au papier, les couleurs solides, balayage, etc. nous sommes
+                toujours disponibles pour vous fournir des conseils de beauté
+                professionnelle et de bien-être pour vous assurer que vous avez
+                la couleur de cheveux que vous rêvez!
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-highlights.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_highlights.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Highlights / lowlights</h2>
+              <p>
+                Vous ne savez pas si lowlights ou Highlights est la bonne
+                technique pour vous, votre coiffeur chez Nick 101 est heureux de
+                vous aider. Contrairement aux Highlights, qui sont des accents
+                de couleur qui sont plus légers que la couleur de base et crée
+                le volume, lowlights sont des brins plus sombres de couleur qui
+                sont entrelacés dans les cheveux.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/women-perm.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/women_perm.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Permanentes</h2>
+              <p>
+                Obtenez les cheveux de votre rêve avec une vague permanente,
+                communément appelé une "perm". Les perms peuvent fournir
+                beaucoup de texture et de volume à vos cheveux. Nos coiffeurs
+                professionnels traitent vos cheveux avec l&#39;ISO Perm pour
+                modifier la structure et de façon permanente onduler ou friser
+                vos cheveux qui dure environ trois à six mois.
+              </p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h2 id="hommes" class="mb-3">Hommes</h2>
+        <div class="cards no-padding mb-4">
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/men-haircut.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/men_haircut.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Coupe de cheveux</h2>
+              <p>
+                Obtenez le style comme vous le voulez! Notre personnel compétent
+                qui sait quel look fonctionne pour chacun de nos clients est
+                prêt à vous servir avec des années d&#39;expérience. Notre
+                équipe réalise toutes les coupes, de la plus classique à la plus
+                originale, afin de créer un style qui correspond à votre
+                individualité.
+              </p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/men-colour.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/men_colour.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Coloration</h2>
+              <p>
+                Besoin de la couleur de cheveux pour hommes? La coloration
+                n&#39;est plus réservée qu&#39;aux femmes, et de plus en plus
+                d&#39;hommes osent la teinture de cheveux. Nous sommes fiers à
+                Salon Nick 101 que nos coiffeurs ont l&#39;expérience avec
+                diverses techniques et sont là pour vous aider à couvrir les
+                racines grises et beaucoup plus. Nous sommes toujours
+                disponibles pour vous fournir un service professionnel pour vous
+                assurer des cheveux sains.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/men-highlights.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/men_highlights.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Highlights</h2>
+              <p>
+                Highlights sont très populaires pour les hommes de nos jours.
+                Les Highlights sont des accents de couleur qui sont plus légers
+                que la couleur de base et créent le volume. Il y a beaucoup de
+                couleurs qui peuvent être employées pour mettre en évidence,
+                votre coiffeur au Salon Nick 101 est heureux de vous aider.
+              </p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h2 id="les-enfants" class="mb-3">Enfants</h2>
+        <div class="cards no-padding">
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/children-haircut.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/children_haircut.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Coupe de cheveux</h2>
+              <p>
+                Les enfants et les adultes sont les bienvenus au Salon Nick 101
+                qui est votre salon de coiffure pour toute la famille! Nos
+                coiffeurs expérimentés sont prêts à donner à votre enfant une
+                bonne Coupe de cheveux dans un environnement amusant! Tous les
+                efforts sont faits pour en avoir une expérience amusante et
+                confortable.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/children-colour.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/children_colour.jpg" alt=""> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Couleur de cheveux temporaires</h2>
+              <p>
+                Les couleurs des cheveux sont une tendance à la hausse pour les
+                enfants et les adolescents.. Maintenant, amusez-vous! Pas de
+                dommages attachés! Chez Salon Nick 101, nous utilisons des
+                couleurs de cheveux temporaires qui se lavent facilement avec le
+                shampooing sans endommager vos cheveux. Consultez notre section
+                <a href="produits.html">produits</a> pour plus de détails.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="img">
+              <img
+                src=""
+                data-src="service/children-parties.jpg"
+                alt=""
+                class="lazyImg"
+              />
+              <!-- <img src="../../assets/img/service/children_parties.jpg" alt="" /> -->
+            </div>
+            <div class="content">
+              <h2 class="title">Fêtes d'anniversaire</h2>
+
+              <p>
+                Nous sommes fiers au Salon Nick 101 d’offrir une variété de
+                forfaits de fête au spa amusants pour tous les âges - les jeunes
+                filles (de 3 à 16 ans) et les petits garçons (de 5 à 10 ans).
+                Consultez notre section <a href="fetes.html">fêtes</a> pour plus
+                de détails.
+              </p>
+            </div>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- End:  Our Service
+    ============================= -->
+
+    <section id="subscribe" class="subscribe">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <!-- Start: Footer Sidebar
+    ============================= -->
+    <footer class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-lg-0 mb-4 address">
+            <h4>Nous rendre visite</h4>
+            <ul>
+              <li>
+                <img
+                  src=""
+                  data-src="svg/loc-bw.svg"
+                  class="lazyImg icon"
+                />1183, chemin Hunt Club Unité 101 <br />Ottawa, ON K1V 8S4
+              </li>
+              <li>
+                <img
+                  src=""
+                  data-src="svg/phone-bw.svg"
+                  class="lazyImg icon"
+                />+1 613-421-9101
+              </li>
+              <li>
+                <img
+                  src=""
+                  data-src="svg/mail-bw.svg"
+                  class="lazyImg icon"
+                />salonnick101@hotmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="locations col-sm-6 col-md-6 col-lg-8">
+            <h4>Nos emplacements</h4>
+            <a href="../../nick101/fr/accueil.html">
+              <img
+                src=""
+                data-src="svg/nick101-bw.svg"
+                alt="Logo Salon Nick 101, version noir et blanc."
+                class="lazyImg"
+              />
+              <span>Salon Nick 101</span></a
+            >
+            <a href="../../fr/accueil.html">
+              <img
+                src=""
+                data-src="svg/salonnick-bw.jpg"
+                alt="Logo Salon Nick, version noir et blanc."
+                class="lazyImg"
+              />
+              <span>Salon Nick</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Start: Footer Copyright
+    ============================= -->
+    <section id="footer-copyright" class="foot-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-lg-left text-center copyright-text">
+            <ul>
+              <li>&copy;<span id="copyrightYear"></span> Salon Nick</li>
+              <!-- <li><a href="#">Termes et conditions</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li> -->
+            </ul>
+          </div>
+          <div class="col-lg-6 col-12">
+            <a href="#" class="scrollup"><i class="fas fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../../assets/js/services.js"></script>
+  </body>
+</html>

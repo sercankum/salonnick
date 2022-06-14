@@ -1,0 +1,52 @@
+{
+    "shimmer-spray": {
+        "name": "Instatint Temporary Color Shimmer Spray",
+        "img": "shimmer-spray.jpg",
+        "content": [
+            "Hair colours are a rising trend for kids and teens.. Now have your fun! No strings or damage attached!",
+            "We are happy to introduce you to Instatint temporary color shimmer spray! Instatint is the perfect choice for any hair colour, texture, or length. It is temporary colour that washes out easily with shampoo, temporary pigments mean no long-term commitment or processing damage."
+        ]
+    },
+    "ice-spiker": {
+        "name": "Ice Spiker Colorz",
+        "img": "ice-spiker.jpg",
+        "content": [
+            "Joico ICE Spiker Colorz Styling Glue is a temporary styling glue with colour. It gives the ability to create any shape, including straight-out spikes. The intensity of colour may vary depending on hair type, condition, and porosity.",
+            "It is water resistant, yet washes out easily with shampoo. It also protects and maintains styles with vitamins, catalysts, and sea kelp. You will fall in love with the delicious milk and honey fragrance!"
+        ]
+    },
+    "beyond-the-zone-bombz": {
+        "name": "Beyond The Zone Color Bombz",
+        "img": "color-combz.jpg",
+        "content": [
+            "At Salon Nick the styling options are endless! Beyond The Zone Color Bombz adds temporary colour where you want! It is specially formulated temporary hair colour in multiple shades that does not damage your hair.",
+            "No need for use of tints, bleaches or peroxide. Beyond The Zone Color Bombz easily washes out with your next shampoo."
+        ]
+    },
+    "joico": {
+        "name": "Joico Collection",
+        "img": "joico.jpg",
+        "content": [
+            "Why Joico? Joico is a line of professional products for the reconstruction and strengthening of hair. It has a name for a remarkable energy.",
+            "We use the following Joico products that are suitable for the hair care weak and exhausting:",
+            "{{ joico-list }}"
+        ],
+        "joico-list": [
+            "K-PAK’s multi-action formulas",
+            "K-PAK Color Therapy",
+            "Daily Care formulas",
+            "Smooth Cure’s",
+            "Body Luxe",
+            "Color Endure",
+            "Moisture Recovery",
+            "Style & Finish formulas"
+        ]
+    },
+    "wella": {
+        "name": "Wella - Color Perfect",
+        "img": "wella.jpg",
+        "content": [
+            "There’s nothing in the world like the beauty of shinny hair! With the Color Perfect Permanent Hair Color by Wella, the color on the swatch will be the color on the hair. It has an excellent array of creme gel colors formulated to be completely intermixable to create any shade desired with predictable natural-looking results. Affordable color with brilliant results. High Shine, Moisture protection and full coverage."
+        ]
+    }
+}

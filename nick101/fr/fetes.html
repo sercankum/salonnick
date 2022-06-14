@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="fr" id="on-app" class="salon-nick101">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="keywords" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../../favicon-101.png"
+      type="image/x-icon"
+    />
+    <title>Salon Nick 101 | Fêtes et Événements</title>
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+          "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 1rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+      }
+
+      .aside-load {
+        background: #fff;
+        left: 50%;
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: opacity 750ms ease-in;
+        width: 100%;
+        z-index: 10;
+      }
+
+      .aside-load:after {
+        background: white;
+        content: "";
+        height: 10000px;
+        left: -500px;
+        position: absolute;
+        top: -500px;
+        width: 10000px;
+        z-index: 0;
+      }
+
+      .aside-load .body {
+        padding: 0 15px;
+        position: relative;
+        z-index: 11;
+      }
+
+      .aside-load .svg-box {
+        margin: 0 auto 15px;
+        width: 62.5px;
+      }
+
+      .aside-load svg {
+        animation: rotate 1.4s linear infinite;
+        -webkit-animation: rotate 1.4s linear infinite;
+        -moz-animation: rotate 1.4s linear infinite;
+        position: relative;
+      }
+
+      .aside-load-msg {
+        font-size: 1.75rem;
+        font-weight: 300;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .aside-load-msg .title {
+        display: block;
+        margin-bottom: 0.83rem;
+        width: 100%;
+      }
+
+      .aside-load .close-btn {
+        color: #ffffff;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 10px;
+        transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+      }
+
+      .aside-load .close-btn span {
+        background: #701e47;
+        border-radius: 23px;
+        display: block;
+        line-height: 24px;
+        padding: 10px 35px;
+      }
+
+      .aside-load.hide,
+      .aside-load .close-btn.hide {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      @-webkit-keyframes rotate {
+        to {
+          -webkit-transform: rotate(360deg);
+        }
+      }
+
+      @-moz-keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+
+    <!-- Styles unique to gallery page (not in other pages) -->
+    <style>
+      .aside-load.zIndex14 {
+        z-index: 14;
+      }
+
+      .aside-load-msg #aside-load-dynamic {
+        white-space: pre-line;
+      }
+    </style>
+
+    <link rel="stylesheet" href="../../assets/css/onic.nav.css" />
+    <link rel="stylesheet" href="../../assets/css/parties.css" />
+  </head>
+
+  <body>
+    <!-- Start: Loading Modal ============================= -->
+    <aside id="aside-load" class="aside-load">
+      <div class="body">
+        <div class="svg-box">
+          <svg
+            width="70px"
+            height="70px"
+            viewBox="0 0 66 66"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              fill="transparent"
+              stroke-width="2"
+              cx="33"
+              cy="33"
+              r="30"
+              stroke="url(#gradient)"
+              style="stroke-dasharray: 170; stroke-dashoffset: 20"
+            ></circle>
+            <linearGradient id="gradient">
+              <stop offset="50%" stop-color="#701e47" stop-opacity="1"></stop>
+              <stop offset="65%" stop-color="#701e47" stop-opacity=".5"></stop>
+              <stop offset="100%" stop-color="#701e47" stop-opacity="0"></stop>
+            </linearGradient>
+          </svg>
+        </div>
+        <h2 class="aside-load-msg">
+          <span class="title">Salon Nick 101</span>
+          <span id="aside-load-dynamic">Chargement, veuillez patienter</span>
+        </h2>
+        <button id="aside-load-closeBtn" class="close-btn hide">
+          <span>Fermer</span>
+        </button>
+      </div>
+    </aside>
+
+    <!-- Start: Modal
+    ============================= -->
+    <aside id="aside-modal" class="aside-modal booking fr hide">
+      <div class="aside-inner">
+        <button class="close">X</button>
+        <h2 class="title mb-3"></h2>
+        <div class="clear"></div>
+        <form
+          id="package-form"
+          data-schema="message"
+          data-template-name="booking_nick101"
+        >
+          <div class="config hide">
+            <input name="indexName" value="jRL8ce9kKoxiAOyYxQEY" readonly />
+            <input
+              name="上|树|键.to"
+              type="text"
+              value="salonnick101@hotmail.com"
+              readonly
+            />
+            <input name="上|树|键._from" value="bm9yZXBseQ==" readonly />
+            <input
+              name="上|树0|键.template"
+              data-schema="_html"
+              value="mailgun/templates/booking_nick101.html"
+              readonly
+            />
+
+            <input
+              id="config_subject"
+              name="上|树|键.subject"
+              type="text"
+              value=""
+              readonly
+            />
+            <input
+              id="package_month_onic_"
+              name="上|树1|组3|键month"
+              readonly
+            />
+            <input id="package_year_onic_" name="上|树1|组3|键year" readonly />
+          </div>
+          <div class="mb-4">
+            <h4 class="mb-3">Choisissez la date de la fête</h4>
+            <div class="calendar mb-4">
+              <div class="currentMonth">
+                <ul>
+                  <!-- <li>
+                                        <i class="fas fa-angle-left left"></i>
+                                        <span class="calenderMonth"></span>
+                                        <i class="fas fa-angle-right right"></i>
+                                    </li> -->
+                  <li>
+                    <img
+                      id="on-last-month"
+                      src=""
+                      data-src="svg/arrow-left.svg"
+                      alt="Arrow pointing to the left."
+                      class="lazyImg icon leftArrow"
+                    />
+                    <span class="calenderMonth"></span>
+                    <img
+                      id="on-next-month"
+                      src=""
+                      data-src="svg/arrow-left.svg"
+                      alt="Arrow pointing to the right."
+                      class="lazyImg icon rightArrow"
+                    />
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <!-- <ul class="ic weekdays"> -->
+                <ul class="weekdays">
+                  <li>Di</li>
+                  <li>Lu</li>
+                  <li>Ma</li>
+                  <li>Me</li>
+                  <li>Je</li>
+                  <li>Ve</li>
+                  <li>Sa</li>
+                  <li class="clear"></li>
+                </ul>
+                <fieldset class="slider radioGroup">
+                  <div class="slides days"></div>
+                </fieldset>
+                <div class="clear"></div>
+              </div>
+            </div>
+
+            <h4 class="time-title mb-3">Choisissez l'heure</h4>
+            <div class="time mb-4">
+              <fieldset class="times radioGroup"></fieldset>
+
+              <div class="gettingTimes">
+                <p>
+                  Veuillez choisir une date pour la disponibilité des créneaux
+                  horaires.
+                </p>
+              </div>
+            </div>
+
+            <h4 id="options-title-" class="on_options mb-3 none">
+              Choisissez les options de paquet
+            </h4>
+            <fieldset id="options-block-" class="on_options checkboxGroup none">
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Manucure"
+                />
+                <span class="checkbox"></span>
+                <span>Manucure</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Pédicure"
+                />
+                <span class="checkbox"></span>
+                <span>Pédicure</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Maquillage scintillant"
+                />
+                <span class="checkbox"></span>
+                <span>Maquillage scintillant</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Masque faciale au yogourt"
+                />
+                <span class="checkbox"></span>
+                <span>Masque faciale au yogourt</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Facial au chocolat"
+                />
+                <span class="checkbox"></span>
+                <span>Facial au chocolat</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Couleurs temporaires de cheveux"
+                />
+                <span class="checkbox"></span>
+                <span>Couleurs temporaires de cheveux</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="S'habiller en princesse"
+                />
+                <span class="checkbox"></span>
+                <span>S&#39;habiller en princesse</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Robes de spa"
+                />
+                <span class="checkbox"></span>
+                <span>Robes de spa</span>
+              </label>
+              <label>
+                <input
+                  type="checkbox"
+                  name="上|树1|组3|键options"
+                  value="Accessoires pour prise de photos"
+                />
+                <span class="checkbox"></span>
+                <span>Accessoires pour prise de photos</span>
+              </label>
+              <div class="clear"></div>
+              <!-- </div> -->
+            </fieldset>
+
+            <!-- <h4 id="options-title-marchBreak" class="on_options mb-3 none">Choisissez deux services de spa</h4>
+                    <fieldset id="options-block-marchBreak" class="on_options checkboxGroup mb-3 none">
+                        <label>
+                            <input type="checkbox" name="上|树1|组3|键optionsEvent" value="Manicure">
+                            <span class="checkbox"></span>
+                            <span>Manicure</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="上|树1|组3|键optionsEvent" value="Pédicure">
+                            <span class="checkbox"></span>
+                            <span>Pédicure</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="上|树1|组3|键optionsEvent" value="Masque faciale">
+                            <span class="checkbox"></span>
+                            <span>Masque faciale</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="上|树1|组3|键optionsEvent" value="Couleurs temporaires de cheveux">
+                            <span class="checkbox"></span>
+                            <span>Couleurs temporaires de cheveux</span>
+                        </label>
+                        <label>
+                            <input type="checkbox" name="上|树1|组3|键optionsEvent" value="Maquillage scintillant">
+                            <span class="checkbox"></span>
+                            <span>Maquillage scintillant</span>
+                        </label>
+                        <div class="clear"></div>
+                    </fieldset>
+
+                    <h4 id="options-title-marchBreak2" class="on_options mb-3 none">Choisissez un métier</h4>
+                    <fieldset id="options-block-marchBreak2" class="on_options radioGroup mb-3 none">
+                        <label>
+                            <input type="radio" name="上|树1|组3|键optionsDIY" value="Bracelet">
+                            <span class="radio"></span>
+                            <span>Bracelet</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="上|树1|组3|键optionsDIY" value="Collier">
+                            <span class="radio"></span>
+                            <span>Collier</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="上|树1|组3|键optionsDIY" value="Des lunettes de soleil">
+                            <span class="radio"></span>
+                            <span>Des lunettes de soleil</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="上|树1|组3|键optionsDIY" value="Tongs">
+                            <span class="radio"></span>
+                            <span>Tongs</span>
+                        </label>
+                        <div class="clear"></div>
+                    </fieldset> -->
+
+            <h4 class="mb-3">Vos infos</h4>
+            <label>
+              <input
+                name="上|树1|组2|键name"
+                type="text"
+                placeholder="Nom complet"
+              />
+              <span class="error-empty"
+                >S'il vous plait entrez votre nom entier.</span
+              >
+            </label>
+
+            <label>
+              <input
+                name="上|树1|组2|键email"
+                type="text"
+                placeholder="Adresse électronique"
+                data-validate="email"
+              />
+              <span class="error-empty"
+                >S'il vous plaît entrer votre adresse email.</span
+              >
+              <span class="error-invalid"
+                >S'il vous plaît, mettez une adresse email valide.</span
+              >
+            </label>
+
+            <label class="mb-4">
+              <input
+                name="上|树1|组2|键phone"
+                type="number"
+                placeholder="Numéro de téléphone"
+              />
+              <span class="error-empty"
+                >Veuillez entrer votre numéro de téléphone.</span
+              >
+            </label>
+
+            <h4 class="on_ifEvent mb-3">Anniversaire fille / garçon</h4>
+            <h4 class="on_ifEvent_show mb-3 on_dN">
+              Informations sur la fille / le garçon
+            </h4>
+            <label>
+              <input
+                name="上|树1|组1|键name"
+                type="text"
+                placeholder="Nom complet"
+              />
+              <span class="error-empty"
+                >Veuillez entrer le nom complet de l'invité d'honneur.</span
+              >
+            </label>
+
+            <label>
+              <input
+                name="上|树1|组1|键turning"
+                type="number"
+                placeholder="Tournant 5"
+                min="1"
+              />
+              <span class="error-empty">Quel âge a l'invité d'honneur?</span>
+            </label>
+
+            <fieldset class="on_ifEvent radioGroup mb-4">
+              <label>
+                <input type="radio" name="上|树1|组1|键gender" value="girl" />
+                <span class="radio"></span>
+                <span>Fille</span>
+              </label>
+              <label>
+                <input type="radio" name="上|树1|组1|键gender" value="boy" />
+                <span class="radio"></span>
+                <span>Garçon</span>
+              </label>
+              <div class="clear"></div>
+            </fieldset>
+
+            <h4 class="mb-3">Informations sur la fête</h4>
+            <label class="mb-4">
+              <input
+                name="上|树1|组3|键numberOfChildren"
+                type="number"
+                placeholder="8 enfants"
+                min="0"
+              />
+              <span class="error-empty"
+                >Veuillez saisir le nombre d'enfants présents.</span
+              >
+            </label>
+
+            <p class="on_ifEvent mb-3">
+              Les clients doivent réserver au moins deux semaines à l'avance
+              pour avoir une place. Des frais de dépôt de 50,00 $ sont requis
+              pour confirmer la date de votre fête, le paiement total étant dû
+              le jour de la fête.
+            </p>
+            <p>
+              Au moins un adulte doit être présent pendant l'activité (3 à 11
+              ans).
+            </p>
+          </div>
+
+          <div class="modal-footer">
+            <button id="on-book" class="boxed-btn font-weight-light">
+              Reserve maintenant
+            </button>
+          </div>
+        </form>
+      </div>
+    </aside>
+
+    <div id="aside-modal-overlay" class="aside-modal-overlay hide"></div>
+
+    <aside id="aside-modal-message" class="aside-modal booking message hide">
+      <div class="aside-inner">
+        <button class="close">X</button>
+        <div class="clear"></div>
+
+        <p class="message"></p>
+      </div>
+    </aside>
+
+    <div
+      id="aside-modal-message-overlay"
+      class="aside-modal-overlay message hide"
+    ></div>
+
+    <!-- Start: Custom Info Banner ============================= -->
+    <aside id="tag-aside-info-bar" class="info-bar">
+      <div id="info-bar-msg" class="info-bar-msg">
+        <p class="container">
+          COVID-19: Politiques et procédures
+          <span id="info-bar-arrow" class="arrow">⯆</span>
+        </p>
+      </div>
+      <div id="info-bar-body" class="info-bar-body">
+        <div class="info-bar-body-bar">
+          <div class="container d-table">
+            <p class="title col-9 float-left">
+              Nous suivons des directives strictes pour assurer la sécurité de
+              nos clients et de notre personnel en raison du COVID-19.
+            </p>
+            <div class="col-3 float-left pr-0">
+              <button id="close-info-bar">
+                <span><i></i><i></i>Fermer la barre d'informations</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <ul class="container mb-3">
+          <li>
+            À votre arrivée, veuillez rester dans votre voiture et appelez-nous
+            au <a class="tel" href="tel:+16134219101">613-421-9101</a> pour vous
+            informer de votre date d'arrivée.
+          </li>
+          <li>
+            Lorsque vous entrez dans le salon, veuillez porter un masque facial.
+            Nous vous recommandons un jetable si vous bénéficiez d'un service de
+            couleur.
+            <span class="extra-info"
+              >Aura des masques jetables disponibles sur demande.</span
+            >
+          </li>
+          <li>
+            Veuillez vous laver / désinfecter vos mains immédiatement en entrant
+            dans le salon.
+          </li>
+          <li>
+            Veuillez conserver tous les éléments inutiles dans votre véhicule.
+            N'apportez que l'essentiel - clés, téléphone et mode de paiement.
+          </li>
+          <li>
+            Nous arrêterons tous les services de boissons dans le salon ainsi
+            que tous les magazines.
+          </li>
+          <li>
+            Gardez votre famille et vos amis en sécurité à la maison. Un seul
+            client est autorisé par station.
+          </li>
+        </ul>
+
+        <p class="container mb-3">
+          Merci à tous pour votre patience et votre compréhension. Au plaisir de
+          vous servir tout.
+        </p>
+      </div>
+    </aside>
+    <!-- End: Custom Info Banner ============================= -->
+
+    <!-- Start: Header Top
+    ============================= -->
+    <section id="tag-sec-navTop" class="nav-top">
+      <div class="container">
+        <div class="row pt-2 pb-3">
+          <div class="col-lg-8 col-md-8 col-sm-12">
+            <a href="../../nick101/parties.html" class="lang slash">En</a>
+            <a href="#" class="lang active">Fr</a>
+            <a
+              href="https://www.facebook.com/salonnick101/"
+              target="_blank"
+              rel="noopener"
+              class="social"
+            >
+              <img
+                src=""
+                data-src="svg/fb-w.svg"
+                alt="Facebook link image."
+                class="lazyImg icon"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/salonnick101/"
+              target="_blank"
+              rel="noopener"
+              class="social"
+            >
+              <img
+                src=""
+                data-src="svg/inst-w.svg"
+                alt="Instagram link image."
+                class="lazyImg icon"
+              />
+            </a>
+            <img
+              id="imgClock"
+              src=""
+              data-src="svg/clock-p.svg"
+              alt="Purple clock icon."
+              class="lazyImg icon hide"
+            />
+            <p id="ifOpen"></p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-12 mb-2 pl-md-0 pl-lg-0 info">
+            <a href="#">
+              <img
+                src=""
+                data-src="svg/mail-p.svg"
+                alt="Purple mail icon."
+                class="lazyImg icon"
+              />
+              salonnick101@hotmail.com</a
+            >
+
+            <a href="tel:+16134219101">
+              <img
+                src=""
+                data-src="svg/phone-p.svg"
+                alt="Purple phone icon."
+                class="lazyImg icon h44"
+              />
+              +1 613-421-9101</a
+            >
+            <div class="clear"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="tag-nav-seprator"></div>
+    <!-- Start: Navigation
+    ============================= -->
+    <section id="tag-sec-nav" class="navbar-wrapper">
+      <div id="tag-div-nav" class="navbar-area sticky-nav container">
+        <div class="logo">
+          <a href="../../nick101/fr/accueil.html">
+            <img
+              src="../../assets/img/svg/nick101.svg"
+              alt="Logo du Salon Nick 101."
+            />
+          </a>
+        </div>
+        <button id="btn-nav">
+          <span><i></i><i></i>Bouton de navigation</span>
+        </button>
+        <nav id="tag-nav">
+          <ul>
+            <li><a href="../../nick101/fr/accueil.html">Accueil</a></li>
+            <li><a href="../../nick101/fr/services.html">Services</a></li>
+            <li class="active"><a href="#">Fêtes et événements</a></li>
+            <li><a href="../../nick101/fr/produits.html">Produits</a></li>
+            <li><a href="../../nick101/fr/galerie.html">Galerie</a></li>
+            <li><a href="../../nick101/fr/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="clear"></div>
+        <div class="bkr"></div>
+      </div>
+    </section>
+
+    <header class="banner">
+      <div class="img mb-4">
+        <img
+          id="imgBanner"
+          src=""
+          data-src="nick101/birthday-parties/banner.jpg"
+          alt=""
+          class="lazyImg"
+        />
+      </div>
+      <div class="container">
+        <div class="row">
+          <h1 class="col-12">Salon Nick 101 - Nos forfaits d'anniversaire</h1>
+        </div>
+      </div>
+    </header>
+
+    <!-- Start: Our Service
+    ============================= -->
+    <section id="services">
+      <div class="container fr">
+        <div class="birthday row mb-5">
+          <p class="mb-3 col-12">
+            Salon Nick 101 gâte des jeunes femmes (de 3 à 16 ans) avec manucure,
+            pédicure, maquillage et beaucoup plus ainsi que les petits hommes (5
+            à 10 ans) avec la peinture du visage, coloration des cheveux et
+            plus. Célébrez l'anniversaire de votre enfant au Salon Nick 101 avec
+            une fête personnalisée et élégante conçue pour vous!
+          </p>
+
+          <p class="mb-3 col-12">
+            Choisir, ci-dessous, à partir d&#39;une variété de forfaits de fête
+            spa amusants pour une durée de deux heures accommodants tous les
+            âges. Fête pour un maximum de quatorze invités, incluant la fêtée.
+            Chaque fête se compose de 75 minutes dans la salle de spa et de 45
+            minutes dans notre salle de réception décorée.
+          </p>
+
+          <p class="mb-3 col-12">
+            N&#39;hésitez pas à apporter des collations, des boissons, des
+            assiettes, des verres et des ustensiles pour vos invités.
+            L&#39;endroit est bien équipé avec un réfrigérateur et un
+            congélateur pour ranger toute la nourriture que vous avez apportée.
+          </p>
+
+          <p class="mb-3 col-12">
+            Salon Nick 101 nécessite un avertissement d&#39;activité pour les
+            enfants pour toutes les fêtes. Veuillez remplir le formulaire fourni
+            dans votre forfait fête d&#39;anniversaire et l&#39;apporter avec
+            vous le jour de votre fête.
+          </p>
+
+          <p class="mb-3 col-12">
+            Veuillez s&#39;il vous plaît noter que nous pouvons toujours
+            personnaliser n&#39;importe quelle fête de spa pour répondre à vos
+            désirs et au souhait de votre enfant! Il nous fera plaisir de vous
+            accueillir avec le nombre d’enfants que vous aimeriez inviter, ainsi
+            que les activités que vous choisissez pour la fête à un coût ajusté.
+          </p>
+
+          <p class="col-12">
+            Si vous avez des questions ou des demandes spéciales, veuillez
+            contacter
+            <a href="mailto:salonnick101@hotmail.com"
+              >salonnick101@hotmail.com</a
+            >
+          </p>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Jolies princesses</h2>
+              <div class="section-title-star">
+                <h3>3 à 6 ans</h3>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <h4>Mini-manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Maquillage pour filles</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>S'habiller en princesse</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Couleurs temporaires de cheveux*</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Musique de spa à relaxation</h4>
+            </div>
+
+            <div class="service-box mb-3">
+              <h4>Invitations de fête en ligne</h4>
+            </div>
+
+            <p class="price">
+              250$ + taxe (pour un max de huit enfants, incluant la fêtée)
+            </p>
+            <p class="price mb-3">
+              25$ + taxe (pour chaque invité supplémentaire)
+            </p>
+            <p class="mb-3">*assez sécuritaires pour la texture de l’enfant</p>
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Les super vedettes</h2>
+              <div class="section-title-star">
+                <h3>7 à 11 ans</h3>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Robes de spa</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Masque faciale au yogourt*</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Musique de spa à relaxation</h4>
+            </div>
+
+            <div class="service-box mb-3">
+              <h4>Invitations de fête en ligne</h4>
+            </div>
+
+            <p class="price">
+              260$ + taxe (pour un max de huit enfants, incluant la fêtée)
+            </p>
+            <p class="price mb-3">
+              28$ + taxe (pour chaque invité supplémentaire)
+            </p>
+
+            <p class="mb-3">
+              *L'acide lactique naturel présent dans le yogourt aide à exfolier
+              la peau de votre enfant. Il sert de meilleur masque adoucissant
+              pour la peau et convient à tous les types de peau.
+            </p>
+
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Spa-gâter</h2>
+              <div class="section-title-star">
+                <h3>12 à 15 ans</h3>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Maquillage scintillant</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Accessoires pour prise de photos</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Musique de spa à relaxation</h4>
+            </div>
+
+            <div class="service-box mb-3">
+              <h4>Invitations de fête en ligne</h4>
+            </div>
+
+            <p class="price">
+              280$ + taxe (pour un max de huit enfants, incluant la fêtée)
+            </p>
+            <p class="price mb-3">
+              30$ + taxe (pour chaque invité supplémentaire)
+            </p>
+
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Sweetest spa</h2>
+              <div class="section-title-star">
+                <h3>16 ans</h3>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Henné*</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Magasines à lire</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Accessoires pour prise de photos</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Musique de spa à relaxation</h4>
+            </div>
+
+            <div class="service-box mb-3">
+              <h4>Invitations de fête en ligne</h4>
+            </div>
+
+            <p class="price">
+              330$ + taxe (pour un max de huit enfants, incluant la fêtée)
+            </p>
+            <p class="price mb-3">
+              35$ + taxe (pour chaque invité supplémentaire)
+            </p>
+            <p class="mb-3">
+              *Le henné se réfère à l&#39;art corporel temporaire résultant de
+              la coloration de la peau
+            </p>
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Spajama</h2>
+              <div class="section-title-star">
+                <h3>7 à 16 ans</h3>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Faciale au chocolat</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Maïs soufflé</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Accessoires pour prise de photos</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Musique de spa à relaxation</h4>
+            </div>
+
+            <div class="service-box mb-3">
+              <h4>Invitations de fête en ligne</h4>
+            </div>
+
+            <div class="service-box mb-4">
+              <p class="pyjamas price">Porter votre pyjama préféré!</p>
+            </div>
+
+            <p class="price">
+              300$ + taxe (pour un max de huit enfants, incluant la fêtée)
+            </p>
+            <p class="price mb-3">
+              32$ + taxe (pour chaque invité supplémentaire)
+            </p>
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Mon bel homme</h2>
+              <div class="section-title-star">
+                <h3>5 à 10 ans</h3>
+              </div>
+            </div>
+
+            <div class="service-box">
+              <h4>Peinture du visage</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Cheveux hérissées</h4>
+            </div>
+            <div class="service-box">
+              <h4>Couleurs temporaires de cheveux*</h4>
+            </div>
+            <div class="service-box">
+              <h4>Maïs soufflé</h4>
+            </div>
+            <div class="service-box">
+              <h4>Musique – Méditation de flute</h4>
+            </div>
+
+            <div class="service-box mb-3">
+              <h4>Invitations de fête en ligne</h4>
+            </div>
+            <p class="price">
+              260$ + taxe (pour un max de huit enfants, incluant le garçon fêté)
+            </p>
+            <p class="price mb-3">
+              28$ + taxe (pour chaque invité supplémentaire)
+            </p>
+            <p class="mb-3">*assez sécuritaires pour la texture de l’enfant</p>
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <!-- New Pacakges -->
+
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Personnalisé</h2>
+              <h3>Tous les âges</h3>
+              <p>
+                Nous pouvons personnaliser n&#39;importe quelle fête de spa;
+                choisir, ci-dessous, votre activités de spa
+              </p>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Maquillage scintillant</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Masque faciale au yogourt</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Facial au chocolat</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Couleurs temporaires de cheveux</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>S&#39;habiller en princesse</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Robes de spa</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Accessoires pour prise de photos</h4>
+            </div>
+
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Avec-Mama</h2>
+              <h3>Tous les âges</h3>
+              <p>Un forfait de spa pour une durée de 60 min</p>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <p class="price mb-3">80$ + taxe</p>
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0">
+            <div class="section-title">
+              <h2>Avec-Daddy</h2>
+              <h3>Tous les âges</h3>
+              <p>Un forfait de spa pour une durée de 60 min</p>
+            </div>
+
+            <div class="service-box">
+              <h4>Manucure</h4>
+            </div>
+
+            <div class="service-box">
+              <h4>Pédicure</h4>
+            </div>
+
+            <p class="price mb-3">70$ + taxe</p>
+            <div class="grey-border-bottom mb-2"></div>
+            <p>
+              Pour réserver e-mail:
+              <a
+                class="purple-border-bottom"
+                href="mailto:salonnick101@hotmail.com"
+                >salonnick101@hotmail.com</a
+              >
+            </p>
+          </div>
+
+          <!-- Row End -->
+        </div>
+      </div>
+    </section>
+
+    <section class="section-padding s-22 container">
+      <div class="row">
+        <h1 class="col-12">Nos actualités</h1>
+      </div>
+      <div class="row">
+        <!-- <div class="col-lg-4 col-md-4 col-sm-6 mb-5 mb-lg-0"> -->
+        <div class="col-12 mb-5">
+          <div class="section-title">
+            <h2>Atelier de la semaine de relâche</h2>
+            <h3>5 à 10 ans</h3>
+            <p>
+              Cette semaine de relâche, rejoignez-nous au Salon Nick 101 car on
+              offrira une variété d'activités de spa passionnantes, arts et
+              artisanat, et bien plus encore!
+            </p>
+          </div>
+          <div class="row mb-3">
+            <div class="col-4">
+              <h4 class="font-weight-light">Services de spa</h4>
+              <div class="service-box">
+                <h4>Manicure</h4>
+              </div>
+
+              <div class="service-box">
+                <h4>Pédicure</h4>
+              </div>
+
+              <div class="service-box">
+                <h4>Masque faciale</h4>
+              </div>
+
+              <div class="service-box">
+                <h4>Couleurs temporaires de cheveux*</h4>
+              </div>
+
+              <div class="service-box">
+                <h4>Maquillage scintillant</h4>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <h4 class="font-weight-light">Artisanat</h4>
+              <div class="service-box">
+                <h4>Bracelet</h4>
+              </div>
+
+              <div class="service-box">
+                <h4>Collier</h4>
+              </div>
+
+              <div class="service-box">
+                <h4>Des lunettes de soleil</h4>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <h4 class="font-weight-light">Collations</h4>
+              <div class="service-box">
+                <h4>Pop corn</h4>
+              </div>
+              <div class="service-box">
+                <h4>jus</h4>
+              </div>
+            </div>
+          </div>
+
+          <p class="price mb-1">45$ (par horaire)</p>
+          <p class="price mb-3">ou deux horaires pour 80$</p>
+          <p class="mb-3">*assez sécuritaires pour la texture de l’enfant</p>
+          <div class="grey-border-bottom mb-2"></div>
+          <p>
+            Pour réserver e-mail:
+            <a
+              class="purple-border-bottom"
+              href="mailto:salonnick101@hotmail.com"
+              >salonnick101@hotmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End:  Our Service
+    ============================= -->
+
+    <section id="subscribe" class="subscribe">
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <!-- Start: Footer Sidebar
+        ============================= -->
+    <footer class="foot">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-4 mb-lg-0 mb-4 address">
+            <h4>Nous rendre visite</h4>
+            <ul>
+              <li>
+                <img
+                  src=""
+                  data-src="svg/loc-bw.svg"
+                  class="lazyImg icon"
+                />1183, chemin Hunt Club Unité 101 <br />Ottawa, ON K1V 8S4
+              </li>
+              <li>
+                <img
+                  src=""
+                  data-src="svg/phone-bw.svg"
+                  class="lazyImg icon"
+                />+1 613-421-9101
+              </li>
+              <li>
+                <img
+                  src=""
+                  data-src="svg/mail-bw.svg"
+                  class="lazyImg icon"
+                />salonnick101@hotmail.com
+              </li>
+            </ul>
+          </div>
+          <div class="locations col-sm-6 col-md-6 col-lg-8">
+            <h4>Nos emplacements</h4>
+            <a href="../../nick101/fr/accueil.html">
+              <img
+                src=""
+                data-src="svg/nick101-bw.svg"
+                alt="Logo Salon Nick 101, version noir et blanc."
+                class="lazyImg"
+              />
+              <span>Salon Nick 101</span></a
+            >
+            <a href="../../fr/accueil.html">
+              <img
+                src=""
+                data-src="svg/salonnick-bw.jpg"
+                alt="Logo Salon Nick, version noir et blanc."
+                class="lazyImg"
+              />
+              <span>Salon Nick</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Start: Footer Copyright
+            ============================= -->
+    <section id="footer-copyright" class="foot-copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-lg-left text-center copyright-text">
+            <ul>
+              <li>&copy;<span id="copyrightYear"></span> Salon Nick</li>
+              <!-- <li><a href="#">Termes et conditions</a></li>
+                        <li><a href="#">Politique de confidentialité</a></li> -->
+            </ul>
+          </div>
+          <div class="col-lg-6 col-12">
+            <a href="#" class="scrollup"><i class="fas fa-arrow-up"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="../../assets/js/parties.js"></script>
+  </body>
+</html>

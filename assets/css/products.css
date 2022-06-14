@@ -1,0 +1,351 @@
+/* Template Dependency - Required */
+@import url('bootstrap.min.css');
+.container {
+    position: relative;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+/* Template Dependency - Not Required */
+/* Onic - Required */
+article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+p a,
+p a:active,
+p a:focus,
+p a:hover,
+p a:visited {
+    border-bottom: 1px solid #701e47;
+    padding-bottom: 0.15rem;
+}
+
+p, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+img.icon {
+    display: block;
+    clear: both;
+    float: left;
+    height: 35px;
+    transition: all 0.2s ease-in;
+    margin-right: 7px;
+    width: 15px;
+}
+
+img.icon.hide {
+    opacity: 0;
+}
+
+.clear {
+    background: none;
+    clear: both;
+    display: block;
+    float: none;
+    height: 0px;
+    width: 100%;
+}
+
+/* Banner */
+.banner .img {
+    overflow: hidden;
+    padding-top: 27%;
+    position: relative;
+    width: 100%;
+}
+  
+.banner .img img {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subscribe {
+    background: #701e47;
+    color: #fff;
+    padding: 50px 0;
+    width: 100%;
+}
+
+.salon-nick .subscribe {
+    background: #a72519;
+}
+
+/* Footer */
+.foot {
+      padding: 80px 0;
+      color: #000000;
+      letter-spacing: 0.25px;
+}
+  
+.foot h4 {
+    margin-bottom: 2rem;
+    position: relative;
+}
+.foot li {
+    line-height: 2;
+}
+.foot .locations img {
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+  
+.foot .locations a {
+    box-sizing: border-box;
+    float: left;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-top: 30%;
+    width: 100%;
+}
+  
+@media (min-width:992px)  {
+    .foot .locations a {
+        padding-top: 16%;
+        width: 46%;
+        margin: 1%;
+    }
+}
+
+.foot .locations a:last-child {
+    border-left: none;
+}
+  
+.foot .locations a span {
+    color: transparent;
+    float: left;
+    height: 0;
+}
+  
+.foot .locations a:hover {
+    cursor: pointer;
+}
+
+.foot-copyright {
+    padding: 40px 0;
+}
+
+.foot-copyright li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Product Dependencies - Not Required */
+/* Modal */
+.aside-modal {
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+    border-radius: 2px;
+    height: auto;
+    max-height: 100%;
+    left: 50%;
+    opacity: 0; 
+    overflow-y: auto;
+    position: fixed; 
+    top: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%;
+    max-width: 720px;
+    z-index: 0; 
+    transition: all 0.25s ease;
+}
+
+@media (min-width:425px)  {
+    .aside-modal {
+        max-height: 95%;
+        width: 95%;
+    }
+}
+
+.aside-modal-overlay {
+    background: white;
+    background: rgba(0,0,0,0.4);
+    content: '';
+    height: 10000px;
+    left: -500px;
+    position: fixed;
+    top: -1000px;
+    visibility: hidden;
+    width: 10000px;
+    z-index: 10;
+}
+
+.aside-modal-overlay.on-modal,
+.aside-modal-overlay.on-nav {
+    visibility: visible;
+}
+
+.aside-modal-overlay.on-nav {
+    z-index: 4;
+}
+
+.aside-modal .aside-inner {
+    background: #fff;
+    padding: 1.25rem;
+    position: relative;
+    z-index: 11;
+}
+
+.aside-modal .close {
+    background: #ffffff;
+    border: 1px solid #000;
+    border-radius: 2px;
+    float: right;
+    font-weight: 300;
+    line-height: 24px;
+    height: 44px;
+    -webkit-appearance: none;
+    width: 44px;
+    padding: 0;
+}
+
+.aside-modal .header,
+.aside-modal .content {
+    width: 100%;
+}
+
+/* Cards */
+.cards {
+    overflow: hidden;
+    transition: all 0.45s ease-in;
+}
+
+.card-section {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+.cards.boot-padding, .cards-section.boot-padding {
+    padding: 0 15px;
+}
+
+.card {
+    box-shadow: 0px 0px 5px rgba(204, 204, 204, 0.3);
+    box-sizing: border-box;
+    border-radius: 2px;
+    float: left;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.card.hide {
+    transform: scale(0);
+}
+
+.card .img {
+    height: 0;
+    overflow: hidden;
+    padding-top: 45%;
+    position: relative;
+    width: 100%;
+}
+.card img {
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    width: 100%;
+}
+.card .content {
+    padding: 1.25rem;
+}
+@media (min-width: 765px){
+    .cards .card {
+        margin-right: 2.5%;
+        width: 48.75%;
+    }
+    .cards .card:nth-child(2n) {
+        margin-right: 0;
+    }
+}
+@media (min-width: 1024px){
+    .cards .card {
+        margin-right: 2.5%;
+        width: 31.5%;
+    }
+    .cards .card:nth-child(2n) {
+        margin-right: 2.5%;
+    }
+    .cards .card:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.cards-nav {
+    position: relative;
+    text-align: center;
+    margin: 2rem 0 0.5rem;
+}
+
+.cards-nav .nav-item, .card .read {
+    border: none;
+    background: none;
+    bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    line-height: 44px;
+    padding: 0;
+    position: relative;
+    -webkit-appearance: none;
+}
+
+.cards-nav .nav-item {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+}
+
+.cards-nav .nav-item:hover:before, .cards-nav .nav-item.active:before, .card .read:hover::before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+.cards-nav .nav-item:before, .card .read:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 4px;
+    left: 0;
+    background: #701e47;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.2s ease-in-out 0s;
+    transition: all 0.2s ease-in-out 0s;
+}
+.salon-nick .cards-nav .nav-item:before, .salon-nick .card .read:before {
+    background: #a72519;
+}
