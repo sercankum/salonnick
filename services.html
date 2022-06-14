@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" id="on-app" class="salon-nick">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./favicon-salon-nick.ico" type="image/x-icon" />
+    <title>Salon Nick | Services</title>
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        .aside-load {
+            background: #fff;
+            left: 50%;
+            opacity: 1;
+            position: fixed;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            transition: opacity 750ms ease-in;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .aside-load:after {
+            background: white;
+            content: '';
+            height: 10000px;
+            left: -500px;
+            position: absolute;
+            top: -500px;
+            width: 10000px;
+            z-index: 0;
+        }
+
+        .aside-load .body {
+            padding: 0 15px;
+            position: relative;
+            z-index: 11;
+        }
+
+        .aside-load .svg-box {
+            margin: 0 auto 15px;
+            width: 62.5px;
+        }
+
+        .aside-load svg {
+            animation: rotate 1.4s linear infinite;
+            -webkit-animation: rotate 1.4s linear infinite;
+            -moz-animation: rotate 1.4s linear infinite;
+            position: relative;
+        }
+
+        .aside-load-msg {
+            font-size: 1.75rem;
+            font-weight: 300;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .aside-load-msg .title {
+            display: block;
+            margin-bottom: 0.83rem;
+            width: 100%;
+        }
+
+        .aside-load .close-btn {
+            color: #ffffff;
+            display: block;
+            margin: 0 auto;
+            padding-bottom: 10px;
+            transition: all 0.3s ease-in-out;
+            -webkit-transition: all 0.3s ease-in-out;
+        }
+
+        .aside-load .close-btn span {
+            background: #a72519;
+            border-radius: 23px;
+            display: block;
+            line-height: 24px;
+            padding: 10px 35px;
+        }
+
+        .aside-load.hide,
+        .aside-load .close-btn.hide {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        @keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        @-webkit-keyframes rotate {
+            to {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @-moz-keyframes rotate {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+
+    <link rel="stylesheet" href="assets/css/onic.nav.css">
+    <link rel="stylesheet" href="assets/css/services.css">
+</head>
+
+<body>
+    <!-- Start: Loading Modal ============================= -->
+    <aside id="aside-load" class="aside-load">
+        <div class="body">
+            <div class="svg-box">
+                <svg width="70px" height="70px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle fill="transparent" stroke-width="2" cx="33" cy="33" r="30" stroke="url(#gradient)"
+                        style="stroke-dasharray: 170; stroke-dashoffset: 20;"></circle>
+                    <linearGradient id="gradient">
+                        <stop offset="50%" stop-color="#a72519" stop-opacity="1"></stop>
+                        <stop offset="65%" stop-color="#a72519" stop-opacity=".5"></stop>
+                        <stop offset="100%" stop-color="#a72519" stop-opacity="0"></stop>
+                    </linearGradient>
+                </svg>
+            </div>
+            <h2 class="aside-load-msg">
+                <span class="title">Salon Nick</span>
+                <span id="aside-load-dynamic">Loading, please wait</span>
+            </h2>
+        </div>
+    </aside>
+
+    <!-- Start: Modal
+    ============================= -->
+    <aside id="aside-modal" class="aside-modal">
+        <div class="aside-inner"></div>
+    </aside>
+
+    <div id="aside-modal-overlay" class="aside-modal-overlay"></div>
+
+    <!-- Start: Custom Info Banner
+        ============================= -->
+    <aside id="tag-aside-info-bar" class="info-bar">
+        <div id="info-bar-msg" class="info-bar-msg">
+            <p class="container">COVID-19: Policies and Procedures
+                <!-- <span class="learn-more">Learn more</span>  -->
+                <span id="info-bar-arrow" class="arrow">⯆</span>
+            </p>
+        </div>
+        <div id="info-bar-body" class="info-bar-body">
+            <div class="info-bar-body-bar">
+                <div class="container d-table">
+                    <p class="title col-9 float-left">We are following strict guidelines to ensure the safety of
+                        our
+                        clients and
+                        staff
+                        due
+                        to
+                        COVID-19.</p>
+                    <div class="col-3 float-left pr-0">
+                        <button id="close-info-bar"><span><i></i><i></i>Close Info Bar</span></button>
+                    </div>
+                </div>
+            </div>
+            <ul class="container mb-3">
+                <li>Upon arrival kindly remain in your car and call us at <a class="tel"
+                        href="tel:+16135966292">613-596-6292</a>
+                    to
+                    let
+                    you know when you may
+                    come
+                    in.</li>
+                <li>When you come into the salon please wear a face mask. We
+                    recommend a
+                    disposable one if you're
+                    receiving a color service.
+                    <span class="extra-info">Will have disposable masks available upon request.</span>
+                </li>
+                <li>Please wash/sanitize your hands immediately upon entering the salon.</li>
+                <li>Please keep any unnecessary items in your vehicle. Bring only the essentials - keys, phone and
+                    payment method.</li>
+                <li>We will be discontinuing all beverage services in the salon as well as removing all magazines.</li>
+                <li>Keep family/friends safe at home. Only one client is allowed per station.</li>
+            </ul>
+
+            <p class="container mb-3">Thank you all for your patience and understanding. Looking forward to serving you
+                all.
+            </p>
+        </div>
+    </aside>
+    <!-- End: Custom Info Banner
+            ============================= -->
+
+    <!-- Start: Header Top
+        ============================= -->
+    <section id="tag-sec-navTop" class="nav-top">
+        <div class="container">
+            <div class="row pt-2 pb-3">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <a href="#" class="lang slash active">En</a>
+                    <a href="fr/services.html" class="lang">Fr</a>
+                    <a href="https://www.facebook.com/salonnick" target="_blank" rel="noopener" class="social">
+                        <img src="" data-src="svg/fb-w.svg" alt="Facebook link image." class="lazyImg icon">
+                    </a>
+                    <a href="https://www.instagram.com/salonnick101/" target="_blank" rel="noopener" class="social">
+                        <img src="" data-src="svg/inst-w.svg" alt="Instagram link image." class="lazyImg icon">
+                    </a>
+                    <img id="imgClock" src="" data-src="svg/clock-r.svg" alt="Red clock icon."
+                        class="lazyImg icon hide">
+                    <p id="ifOpen"></p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 mb-2 pl-md-0 pl-lg-0 info">
+                    <a href="#">
+                        <img src="" data-src="svg/mail-r.svg" alt="Red mail icon." class="lazyImg icon">
+                        salonnick@hotmail.com</a>
+
+                    <a href="tel:+16135966292">
+                        <img src="" data-src="svg/phone-r.svg" alt="Red phone icon." class="lazyImg icon h44">
+                        +1 613-596-6292</a>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="tag-nav-seprator"></div>
+    <!-- Start: Navigation
+    ============================= -->
+    <section id="tag-sec-nav" class="navbar-wrapper">
+        <div id="tag-div-nav" class="navbar-area sticky-nav container">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="assets/img/svg/salonNick.jpg" alt="Salon Nick Logo">
+                </a>
+            </div>
+            <button id="btn-nav"><span><i></i><i></i>Navigation Button</span></button>
+            <nav id="tag-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="#">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="clear"></div>
+            <div class="bkr"></div>
+        </div>
+    </section>
+
+    <!-- Start: Breadcrumb Area
+    ============================= -->
+    <header class="banner">
+        <div class="img mb-4">
+            <!-- <img src="assets/img/service/services_banner.jpg" alt=""> -->
+            <img src="" data-src="service/banner.jpg" alt="" class="lazyImg">
+        </div>
+        <div class="container">
+            <h1 class="mb-3">Salon Nick - Services</h1>
+            <p>Looking for high quality and personal hair service? You are at the right place! At Salon Nick, will give
+                you
+                the attention and professional service you deserve. We offer a full selection of salon services to make
+                you look and feel unique.</p>
+        </div>
+    </header>
+    <!-- End: Breadcrumb Area
+    ============================= -->
+
+    <!-- Start: Our Service
+    ============================= -->
+    <section id="services" class="section-padding s-22">
+        <div class="container">
+            <h2 id="womens" class="mb-3">Women's</h2>
+            <div class="cards no-padding mb-4">
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_haircut.jpg" alt=""> -->
+                        <img src="" data-src="service/women-haircut.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Hair Cut</h2>
+                        <p>Get styled the way you want it! Our knowledgeable staff who knows which look
+                            works for each
+                            of our clients is ready to serve you with years of experience.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_blowdry.jpg" alt=""> -->
+                        <img src="" data-src="service/women-blowdry.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Blow Dry Style</h2>
+                        <p>Looking to transform your hair to something much more interesting, our
+                            hairstylists are
+                            happy to help your hair having volume with the kind of gentle, glossy curves that make you
+                            look like celebrities!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_updo.jpg" alt=""> -->
+                        <img src="" data-src="service/women-updo.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Up-do</h2>
+                        <p>Up-do hairstyles are perfect for special occasions such as a prom, weddings and
+                            parties.
+                            Also Up-dos are a fabulous hairstyle solution for long, medium and even short hair. It is
+                            perfect for women who want to make a statement!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_treatment.jpg" alt=""> -->
+                        <img src="" data-src="service/women-treatment.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Hair Treatment</h2>
+                        <p>At Salon Nick we offer the best in hair care services and treatments. We use
+                            Joico Collection
+                            that is suitable for the hair care weak and exhausting in order to protect the hair and
+                            make it stronger.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_colour.jpg" alt=""> -->
+                        <img src="" data-src="service/women-colour.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Colour</h2>
+                        <p>We are proud at Salon Nick that our hairstylists have experience with various
+                            techniques such
+                            as the traditional foils, solid colours, balayage, etc. we are always available to provide
+                            you with professional beauty and wellness tips to ensure you have the hair colour you are
+                            dreaming of!</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_highlights.jpg" alt=""> -->
+                        <img src="" data-src="service/women-highlights.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Highlights / Lowlights</h2>
+                        <p>Not sure if lowlights or highlights is the right technique for you, your
+                            hairstylist at Salon Nick is happy to help you. Unlike highlights, which are accents of
+                            colour that are lighter
+                            than the base colour and creates volume, lowlights are darker strands of colour that are
+                            interlaced into the hair.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/women_perm.jpg" alt=""> -->
+                        <img src="" data-src="service/women-perm.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Perms</h2>
+                        <p>Obtain the hair of you dream with a permanent wave, commonly called a “perm”.
+                            Perms can provide a
+                            lot of texture and volume to you hair. Our professional hairstylists treat your hair with
+                            ISO Perm to alter
+                            the structure and permanently wave or curl you hair that lasts approximately three to six
+                            months.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <h2 id="mens" class="mb-3">Men's</h2>
+            <div class="cards no-padding mb-4">
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/men_haircut.jpg" alt=""> -->
+                        <img src="" data-src="service/men-haircut.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Hair Cut</h2>
+                        <p>Get styled the way you want it! Our knowledgeable staff who knows which look
+                            works
+                            for each of our clients is ready to serve you with years of experience.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/men_colour.jpg" alt=""> -->
+                        <img src="" data-src="service/men-colour.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Colour</h2>
+                        <p>In need of men&#39;s hair colour? Colouring is no longer reserved for women,
+                            and more and more men
+                            dare to dye hair. We are proud at Salon Nick that our hairstylists have experience with
+                            various
+                            techniques and are here to help you covering up those gray roots. We are always available
+                            to
+                            provide you with professional service for healthy-looking hair.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/men_highlights.jpg" alt=""> -->
+                        <img src="" data-src="service/men-highlights.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Highlights</h2>
+                        <p>Highlights are very popular for men nowadays. Highlights are accents of colour that are
+                            lighter than the
+                            base colour and create volume. There are many colors that can be used for highlighting,
+                            your hairstylist
+                            at Salon Nick is happy to help you.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+            <h2 id="children" class="mb-3">Children's</h2>
+            <div class="cards no-padding">
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/children_haircut.jpg" alt=""> -->
+                        <img src="" data-src="service/children-haircut.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Hair Cut</h2>
+                        <p>Kids and adults are welcome at Salon Nick. Our experienced hairdressers are
+                            ready to give your child
+                            a great haircut in a fun environment! Every effort is made to make it a fun and comfortable
+                            experience.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="img">
+                        <!-- <img src="assets/img/service/children_colour.jpg" alt=""> -->
+                        <img src="" data-src="service/children-colour.jpg" alt="" class="lazyImg">
+                    </div>
+                    <div class="content">
+                        <h2 class="title">Temporary Hair Colours</h2>
+                        <p>Hair colors are a rising trend for kids and teens.. Now have your fun! No strings or damage
+                            attached! At
+                            Salon Nick we use temporary hair colours that wash out easily with shampoo and do not
+                            damage your
+                            hair. Check our <a href="products.html">products</a> section for more details.</p>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+    <!-- End:  Our Service
+    ============================= -->
+
+
+    <!-- Start: Subscribe
+    ============================= -->
+    <section id="subscribe" class="subscribe">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-7 col-md-12 text-lg-left text-center mb-lg-0 mb-3">
+                    <img src="assets/img/svg/mail.svg" alt="Mail Icon">
+                    <h3 class="text-uppercase">Sign up for News & Offers</h3>
+                    <p>Subcribe to lastest our latest news & great deals.</p>
+                </div>
+                <div class="col-lg-5 col-md-12 text-center">
+                    <form id="subscribe-form" action="#" method="POST">
+                        <input type="email" name="email" id="subscribe-mail" placeholder="Email" required>
+                        <button>Subscribe</button>
+                    </form>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <!-- End: Subscribe
+    ============================= -->
+
+    <!-- Start: Footer Sidebar
+	    ============================= -->
+    <footer class="foot">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-4 mb-lg-0 mb-4 address">
+                    <h4>Visit Us</h4>
+                    <ul>
+                        <li><img src="" data-src="svg/loc-bw.svg" class="lazyImg icon">2730 Iris St. Unit 6
+                            <br />Ottawa, ON K2C 3C9
+                        </li>
+                        <li><img src="" data-src="svg/phone-bw.svg" class="lazyImg icon">+1
+                            613-596-6292</li>
+                        <li><img src="" data-src="svg/mail-bw.svg" class="lazyImg icon">salonnick@hotmail.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="locations col-sm-6 col-md-6 col-lg-8">
+                    <h4>Our Locations</h4>
+                    <a href="home.html">
+                        <img src="" data-src="svg/salonnick-bw.jpg" alt="Salon Nick logo, black and white version."
+                            class="lazyImg">
+                        <span>Salon Nick</span></a>
+                    <a href="nick101/home.html">
+                        <img src="" data-src="svg/nick101-bw.svg" alt="Salon Nick 101 logo, black and white version."
+                            class="lazyImg">
+                        <span>Salon Nick 101</span></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Start: Footer Copyright
+                                ============================= -->
+    <section id="footer-copyright" class="foot-copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-lg-left text-center copyright-text">
+                    <ul>
+                        <li>&copy;<span id="copyrightYear"></span> Salon Nick</li>
+                        <!-- <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li> -->
+                    </ul>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <a href="#" class="scrollup"><i class="fas fa-arrow-up"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/services.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+/* TEAM */
+Corporation: ONIC Group Inc.
+Location: Ottawa, Ontario, Canada
+Site: https://onic.ca
+Team: Onic
+
+/* SITE CODE */
+Copyright: ONIC Group Inc.
+Last update: 2022/02/27
+License: None
+
+/* THANKS - Third Party */
+- Loader Overlay
+Site: https://codepen.io/madebygus/pen/EjBvXR
+Team: Gus Alaniz
+
+- Bootstrap
+License: https://github.com/twbs/bootstrap/blob/master/LICENSE
+Site: https://getbootstrap.com
+Team: The Bootstrap Authors
