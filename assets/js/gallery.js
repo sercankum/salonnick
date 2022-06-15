@@ -770,7 +770,6 @@ var domIsReady = (function (domIsReady) {
       currentImgKey;
 
     function showFullGalleryImage(params) {
-      console.info(params);
       var imageJsonPath =
         window.origin + "/assets/data/nick_101/gallery-images.json";
       currentImageSection = params.gallerySection;
@@ -788,7 +787,6 @@ var domIsReady = (function (domIsReady) {
         galleryLocationsLoaded = true;
         getJson(imageJsonPath, function (res) {
           galleryImgLocations = res;
-          console.info(galleryImgLocations);
           updateModalImageSrc({
             gallerySection: params.gallerySection,
             thumbnailID: params.thumbnailID,
@@ -820,18 +818,12 @@ var domIsReady = (function (domIsReady) {
               _size[currentImageSection] ||
               objSize(galleryImgLocations[currentImageSection]);
             if (currentImgKey === 1) {
-              //   showFullGalleryImage(
-              //     currentImageSection,
-              //     _size[currentImageSection]
-              //   );
               showFullGalleryImage({
                 gallerySection: currentImageSection,
                 thumbnailID: _size[currentImageSection],
               });
               return;
             }
-            console.info(currentImageSection);
-            console.info(currentImageSection);
             showFullGalleryImage({
               gallerySection: currentImageSection,
               thumbnailID: currentImgKey + 1,
@@ -846,11 +838,9 @@ var domIsReady = (function (domIsReady) {
     }
 
     function updateModalImageSrc(params) {
-      console.info(params);
       var folderName = params.gallerySection;
       var imageName =
         galleryImgLocations[params.gallerySection][params.thumbnailID];
-      console.info(params);
       var imageSource =
         window.origin +
         "/assets/img/nick101/gallery/" +
