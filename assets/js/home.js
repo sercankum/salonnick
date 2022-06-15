@@ -162,7 +162,7 @@ var domIsReady = (function (domIsReady) {
     _isSalonNick = _app.classList.contains("salon-nick"),
     _isEnglish = document.documentElement.lang == "en";
 
-  function ajax_get_json(url, callback) {
+  function getJson(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -398,7 +398,7 @@ var domIsReady = (function (domIsReady) {
         hour = date.getHours(),
         day = date.getDay();
 
-      ajax_get_json(store_json, function (store) {
+      getJson(store_json, function (store) {
         var hours = store.hours;
         for (var val in hours.normal) {
           if (!hours.normal.hasOwnProperty(val)) continue;

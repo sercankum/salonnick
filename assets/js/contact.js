@@ -167,7 +167,7 @@ var domIsReady = (function (domIsReady) {
   var emailFunctionURL =
     "https://us-central1-salon-nick.cloudfunctions.net/firmailgun/api/v1/messages/send";
 
-  function ajax_get_json(url, callback) {
+  function getJson(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -439,7 +439,7 @@ var domIsReady = (function (domIsReady) {
         hour = date.getHours(),
         day = date.getDay();
 
-      ajax_get_json(store_json, function (store) {
+      getJson(store_json, function (store) {
         on.store = store;
         var hours = store.hours;
         for (var val in hours.normal) {

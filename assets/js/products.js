@@ -36,7 +36,7 @@ var domIsReady = (function (domIsReady) {
     _isSalonNick = _app.classList.contains("salon-nick"),
     _isEnglish = document.documentElement.lang == "en";
 
-  function ajax_get_json(url, callback) {
+  function getJson(url, callback) {
     var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function () {
       if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
@@ -211,7 +211,7 @@ var domIsReady = (function (domIsReady) {
         Modal Open/Close
         --------------------------------------*/
 
-    function modal_open() {
+    function openModal() {
       var overlay = document.getElementById("aside-modal-overlay");
       // overlay.style.visibility = 'visible';
       overlay.classList.add("on-modal");
@@ -403,7 +403,7 @@ var domIsReady = (function (domIsReady) {
       var modal = document.getElementById("aside-modal");
       modal.querySelector(".aside-inner").innerHTML = "";
 
-      ajax_get_json(products_json, function (products) {
+      getJson(products_json, function (products) {
         var product = products[package],
           fragment = document.createDocumentFragment(),
           wrap_div = document.createElement("div");
@@ -471,7 +471,7 @@ var domIsReady = (function (domIsReady) {
 
         var modal = document.getElementById("aside-modal");
         modal.querySelector(".aside-inner").appendChild(fragment);
-        modal_open();
+        openModal();
       });
     }
 
@@ -536,7 +536,7 @@ var domIsReady = (function (domIsReady) {
         hour = date.getHours(),
         day = date.getDay();
 
-      ajax_get_json(store_json, function (store) {
+      getJson(store_json, function (store) {
         on.store = store;
         var hours = store.hours;
         for (var val in hours.normal) {

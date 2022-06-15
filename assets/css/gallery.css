@@ -1,44 +1,44 @@
 /* Template Dependency - Required */
-@import url('bootstrap.min.css');
+@import url("bootstrap.min.css");
 .container {
-    position: relative;
+  position: relative;
 }
 
 .section-padding {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 /* Template Dependency - Not Required */
 .boxed-btn {
-    background:#701e47;
-    border-radius: 23px;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 21px;
-    overflow: hidden;
-    padding: 11px 34px;
-    position: relative;
-    -webkit-transition: all 0.3s;
-    transition: all 0.3s;
-    text-transform: capitalize;
+  background: #701e47;
+  border-radius: 23px;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  overflow: hidden;
+  padding: 11px 34px;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-transform: capitalize;
 }
 
 .salon-nick .boxed-btn {
-    background:#a72519;
+  background: #a72519;
 }
 
 .info-box {
-    padding: 30px 40px;
-    box-shadow: 0px 1px 4px 0px rgba(44, 49, 59, 0.15);
-    margin-bottom: 20px;
-    -webkit-transition: .3s all;
-    transition: .3s all;
+  padding: 30px 40px;
+  box-shadow: 0px 1px 4px 0px rgba(44, 49, 59, 0.15);
+  margin-bottom: 20px;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
 }
 
 .info-box:hover {
-    box-shadow: 0px 4px 30px 0px rgba(44, 49, 59, 0.15);
+  box-shadow: 0px 4px 30px 0px rgba(44, 49, 59, 0.15);
 }
 
 /* Onic - Required */
@@ -47,411 +47,433 @@ a:active,
 a:focus,
 a:hover,
 a:visited {
-    color: #000000;
-    text-decoration: none;
-    outline: none;
+  color: #000000;
+  text-decoration: none;
+  outline: none;
 }
 
-p, ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-img {
-    max-width: 100%;
+p,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 img.icon {
-    display: block;
-    clear: both;
-    float: left;
-    height: 35px;
-    transition: all 0.2s ease-in;
-    margin-right: 7px;
-    width: 15px;
+  display: block;
+  clear: both;
+  float: left;
+  height: 35px;
+  transition: all 0.2s ease-in;
+  margin-right: 7px;
+  width: 15px;
 }
 
 img.icon.big {
-    height: 35px;
-    padding: 3px 3px 3px 0;
-    width: 35px;
+  height: 35px;
+  padding: 3px 3px 3px 0;
+  width: 35px;
 }
 
 img.icon.hide {
-    opacity: 0;
+  opacity: 0;
 }
 
 .clear {
-    background: none;
-    clear: both;
-    display: block;
-    float: none;
-    height: 0px;
-    width: 100%;
+  background: none;
+  clear: both;
+  display: block;
+  float: none;
+  height: 0px;
+  width: 100%;
 }
 
 /* Aside */
 .aside-load.close {
-    opacity: 0; 
-    transform: translate(-50%, -50%) scale(0.9); 
-    z-index: 0;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.9);
+  z-index: 0;
 }
 
 .aside-modal .close.close-over {
-    border: none;
-    opacity: 1;
-    position: absolute;
-    right: 2.5rem;
-    top: 2.5rem;
-} 
+  border: none;
+  opacity: 1;
+  position: absolute;
+  right: 2.5rem;
+  top: 2.5rem;
+  z-index: 1;
+}
+
+.gallery-image-container {
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  padding-top: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.gallery-image {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
 
 /* Banner */
 .banner .img {
-    overflow: hidden;
-    padding-top: 27%;
-    position: relative;
-    width: 100%;
+  overflow: hidden;
+  padding-top: 27%;
+  position: relative;
+  width: 100%;
 }
 
 .banner .img img {
-    left: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .subscribe {
-    background: #701e47;
-    color: #fff;
-    padding: 50px 0;
-    width: 100%;
+  background: #701e47;
+  color: #fff;
+  padding: 50px 0;
+  width: 100%;
 }
 .salon-nick .subscribe {
-    background: #a72519;
+  background: #a72519;
 }
 
 /* Footer */
 .foot {
-      padding: 80px 0;
-      color: #000000;
-      letter-spacing: 0.25px;
+  padding: 80px 0;
+  color: #000000;
+  letter-spacing: 0.25px;
 }
-  
+
 .foot h4 {
-    margin-bottom: 2rem;
-    position: relative;
+  margin-bottom: 2rem;
+  position: relative;
 }
 .foot li {
-    line-height: 2;
+  line-height: 2;
 }
 .foot .locations img {
-    left: 0;
-    opacity: 0.8;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  left: 0;
+  opacity: 0.8;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
 }
-  
+
 .foot .locations a {
-    box-sizing: border-box;
-    float: left;
-    margin-bottom: 1rem;
-    position: relative;
-    padding-top: 30%;
-    width: 100%;
+  box-sizing: border-box;
+  float: left;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-top: 30%;
+  width: 100%;
 }
-  
-@media (min-width:992px)  {
-    .foot .locations a {
-        padding-top: 16%;
-        width: 46%;
-        margin: 1%;
-    }
+
+@media (min-width: 992px) {
+  .foot .locations a {
+    padding-top: 16%;
+    width: 46%;
+    margin: 1%;
+  }
 }
 
 .foot .locations a:last-child {
-    border-left: none;
+  border-left: none;
 }
-  
+
 .foot .locations a span {
-    color: transparent;
-    float: left;
-    height: 0;
+  color: transparent;
+  float: left;
+  height: 0;
 }
-  
+
 .foot .locations a:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .foot-copyright {
-    padding: 40px 0;
+  padding: 40px 0;
 }
 
 .foot-copyright li {
-    display: inline-block;
-    margin-right: 20px;
+  display: inline-block;
+  margin-right: 20px;
 }
 
 /* Gallery Dependencies - Not Required */
 /* Modal */
 .aside-modal {
-    background: white;
-    box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
-    border-radius: 2px;
-    /* height: 0; */
-    max-height: 95%;
-    left: 50%;
-    /* overflow: hidden;
+  background: white;
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 5px;
+  border-radius: 2px;
+  /* height: 0; */
+  max-height: 95%;
+  left: 50%;
+  /* overflow: hidden;
     overflow-y: scroll; */
-    opacity: 0; 
-    pointer-events: none;
-    position: fixed;
-    top: 50%; 
-    /* bottom: 15px; */
-    transform: translate(-50%, -50%); 
-    /* transform: translateX(-50%); */
-    /* width: 100%; */
-    max-width: 720px;
-    z-index: 11; 
-    transition: opacity 0.25s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 50%;
+  /* bottom: 15px; */
+  transform: translate(-50%, -50%);
+  /* transform: translateX(-50%); */
+  /* width: 100%; */
+  max-width: 720px;
+  z-index: 11;
+  transition: opacity 0.25s ease-in-out;
 }
 
 .aside-modal-open {
-    opacity: 1;
-    pointer-events: initial;
-    /* z-index: 11; */
+  opacity: 1;
+  pointer-events: initial;
+  /* z-index: 11; */
 }
 
 .modal-container {
-    width: 100%;
+  width: 100%;
 }
 
-@media (min-width: 576px){
-    .modal-container {
-        max-width: 540px;
-    }
+@media (min-width: 576px) {
+  .modal-container {
+    max-width: 540px;
+  }
 }
 @media (min-width: 768px) {
-    .modal-container {
-        max-width: 720px;
-    }
+  .modal-container {
+    max-width: 720px;
+  }
 }
 
 .nav-overlay,
 .aside-modal-overlay {
-    background: white;
-    background: rgba(0,0,0,0.4);
-    content: '';
-    height: 10000px;
-    left: -500px;
-    position: fixed;
-    pointer-events: none;
-    opacity: 0;
-    top: -1000px;
-    transition: opacity 0.25s ease-in-out;
-    width: 10000px;
-    z-index: 10;
+  background: white;
+  background: rgba(0, 0, 0, 0.4);
+  content: "";
+  height: 10000px;
+  left: -500px;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: -1000px;
+  transition: opacity 0.25s ease-in-out;
+  width: 10000px;
+  z-index: 10;
 }
 
 .nav-overlay {
-    z-index: 4;
+  z-index: 4;
 }
 
 .nav-overlay-open,
 .aside-modal-overlay-open {
-    opacity: 1;
-    pointer-events: initial;
+  opacity: 1;
+  pointer-events: initial;
 }
 
 .aside-modal .aside-inner {
-    background: #fff;
-    padding: 1.25rem;
-    position: relative;
-    z-index: 11;
+  background: #fff;
+  padding: 1.25rem;
+  position: relative;
+  z-index: 11;
 }
 
 .aside-modal .modal-loader-parent {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: white;
-    top: 0;
-    left: 0;
-    min-height: 450px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  top: 0;
+  left: 0;
+  min-height: 450px;
+  z-index: 1;
 }
 
-/* .aside-modal .clear {
-} */
 .modal-loader {
-    padding: 0 15px;
-    position: relative;
-    z-index: 11;
-    top: 50%;
-    transform: translateY(-50%);
+  padding: 0 15px;
+  position: relative;
+  z-index: 11;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .modal-loader-svg-parent {
-    width: 200px; margin: 0 auto; padding: 20px;
+  width: 200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .aside-modal .close {
-    background: #ffffff;
-    border: 1px solid #000;
-    border-radius: 2px;
-    float: right;
-    font-weight: 300;
-    line-height: 24px;
-    height: 44px;
-    -webkit-appearance: none;
-    width: 44px;
-    padding: 0;
+  background: #ffffff;
+  border: 1px solid #000;
+  border-radius: 2px;
+  float: right;
+  font-weight: 300;
+  line-height: 24px;
+  height: 44px;
+  -webkit-appearance: none;
+  width: 44px;
+  padding: 0;
 }
 
 .aside-modal .header,
 .aside-modal .content {
-    width: 100%;
+  width: 100%;
 }
 
 .sm-button {
-    background: #ffffff;
-    border: 1px solid #000000;
-    border: 1px solid rgba(0,0,0,0.8);
-    border-radius: 2px;
-    height: 44px;
-    width: 44px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 2px;
+  height: 44px;
+  width: 44px;
 }
 
 /* Cards */
 .cards {
-    overflow: hidden;
-    transition: all 0.45s ease-in;
+  overflow: hidden;
+  transition: all 0.45s ease-in;
 }
 
 .card-section {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 0;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 0;
 }
 
-.cards.boot-padding, .cards-section.boot-padding {
-    padding: 0 15px;
+.cards.boot-padding,
+.cards-section.boot-padding {
+  padding: 0 15px;
 }
 
 .card {
-    box-shadow: 0px 0px 5px rgba(204, 204, 204, 0.3);
-    box-sizing: border-box;
-    border-radius: 2px;
-    float: left;
-    padding: 0;
-    margin-bottom: 1.5rem;
-    width: 100%;
-    transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px 5px rgba(204, 204, 204, 0.3);
+  box-sizing: border-box;
+  border-radius: 2px;
+  float: left;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
 }
 
 .cards.gallery .card {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .card.hide {
-    transform: scale(0);
+  transform: scale(0);
 }
 
 .card .img {
-    height: 0;
-    overflow: hidden;
-    padding-top: 45%;
-    position: relative;
-    width: 100%;
+  height: 0;
+  overflow: hidden;
+  padding-top: 45%;
+  position: relative;
+  width: 100%;
 }
 .card img {
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    width: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 100%;
 }
 .card .content {
-    padding: 1.25rem;
+  padding: 1.25rem;
 }
 
 .cards.gallery .card .content {
-    padding-top: 35%;
+  padding-top: 35%;
 }
 
 .cards-section {
-    min-height: 1000px;
+  min-height: 1000px;
 }
 
-@media (min-width: 765px){
-    .cards .card {
-        margin-right: 2.5%;
-        width: 48.75%;
-    }
-    .cards .card:nth-child(2n) {
-        margin-right: 0;
-    }
+@media (min-width: 765px) {
+  .cards .card {
+    margin-right: 2.5%;
+    width: 48.75%;
+  }
+  .cards .card:nth-child(2n) {
+    margin-right: 0;
+  }
 }
-@media (min-width: 1024px){
-    .cards .card {
-        margin-right: 2.5%;
-        width: 31.5%;
-    }
-    .cards .card:nth-child(2n) {
-        margin-right: 2.5%;
-    }
-    .cards .card:nth-child(3n) {
-        margin-right: 0;
-    }
+@media (min-width: 1024px) {
+  .cards .card {
+    margin-right: 2.5%;
+    width: 31.5%;
+  }
+  .cards .card:nth-child(2n) {
+    margin-right: 2.5%;
+  }
+  .cards .card:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .cards-nav {
-    position: relative;
-    text-align: center;
-    margin: 2rem 0 0.5rem;
+  position: relative;
+  text-align: center;
+  margin: 2rem 0 0.5rem;
 }
 
-.cards-nav .nav-item, .card .read {
-    border: none;
-    background: none;
-    bottom: 1rem;
-    font-size: 0.9rem;
-    font-weight: 300;
-    line-height: 44px;
-    padding: 0;
-    position: relative;
-    -webkit-appearance: none;
+.cards-nav .nav-item,
+.card .read {
+  border: none;
+  background: none;
+  bottom: 1rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  line-height: 44px;
+  padding: 0;
+  position: relative;
+  -webkit-appearance: none;
 }
 
 .cards-nav .nav-item {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    margin-right: 10px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  margin-right: 10px;
 }
 
-.cards-nav .nav-item:hover:before, .cards-nav .nav-item.active:before, .card .read:hover::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
+.cards-nav .nav-item:hover:before,
+.cards-nav .nav-item.active:before,
+.card .read:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
-.cards-nav .nav-item:before, .card .read:before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    bottom: 4px;
-    left: 0;
-    background: #701e47;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.2s ease-in-out 0s;
-    transition: all 0.2s ease-in-out 0s;
+.cards-nav .nav-item:before,
+.card .read:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 4px;
+  left: 0;
+  background: #701e47;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
 }
-.salon-nick .cards-nav .nav-item:before, .salon-nick .card .read:before {
-    background: #a72519;
+.salon-nick .cards-nav .nav-item:before,
+.salon-nick .card .read:before {
+  background: #a72519;
 }
