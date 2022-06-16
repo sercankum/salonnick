@@ -5,14 +5,14 @@
     "hours": {
         "content": {
             "en": {
-                "early9": "Thanks for visiting, we open today at 9 AM.",
+                "early9": "Thanks for visiting, we open today at 9:30 AM.",
                 "open6": "Open today till 6 PM.",
-                "closed9": "Thanks for visiting, we will be open tomorrow at 9 AM."
+                "closed9": "Thanks for visiting, we will be open tomorrow at 9:30 AM."
             },
             "fr": {
-                "early9": "Merci pour votre visite, nous sommes ouverts aujourd'hui à 9h.",
+                "early9": "Merci pour votre visite, nous sommes ouverts aujourd'hui à 0930h.",
                 "open6": "ouvert aujourd'hui jusqu'à 18h.",
-                "closed9": "Merci pour votre visite, nous serons ouverts demain à 9h."
+                "closed9": "Merci pour votre visite, nous serons ouverts demain à 0930h."
             }
         },
         "holiday": [],

@@ -6,15 +6,15 @@
         "content": {
             "en": {
                 "parties": "Thanks for visiting, we are open today for birthday parties only.",
-                "early9": "Thanks for visiting, we open today at 9 AM.",
+                "early9": "Thanks for visiting, we open today at 10 AM.",
                 "open6": "Open today till 6 PM.",
-                "closed9": "Thanks for visiting, we will be open tomorrow at 9 AM."
+                "closed9": "Thanks for visiting, we will be open tomorrow at 10 AM."
             },
             "fr": {
                 "parties": "Merci pour votre visite, nous sommes ouverts aujourd'hui pour les fêtes d'anniversaire seulement.",
-                "early9": "Merci pour votre visite, nous sommes ouverts aujourd'hui à 9h.",
+                "early9": "Merci pour votre visite, nous sommes ouverts aujourd'hui à 10h.",
                 "open6": "ouvert aujourd'hui jusqu'à 18h.",
-                "closed9": "Merci pour votre visite, nous serons ouverts demain à 9h."
+                "closed9": "Merci pour votre visite, nous serons ouverts demain à 10h."
             }
         },
         "holiday": [],
