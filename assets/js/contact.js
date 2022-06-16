@@ -483,7 +483,7 @@ var domIsReady = (function (domIsReady) {
     function load_map() {
       // Load google maps API.
       var google_path =
-        "https://maps.googleapis.com/maps/api/js?key=AIzaSyCvN2PRlImaHiKwqKx0zXo-eCZ5q6dJJUU";
+        "https://maps.googleapis.com/maps/api/js?key=AIzaSyAkdOqZlFWQpiuOX7ng8Aul34hPa5gAFbo";
       $script(google_path, function () {
         // Create google map with custom styles.
         var mapCenterPosition = _isSalonNick
